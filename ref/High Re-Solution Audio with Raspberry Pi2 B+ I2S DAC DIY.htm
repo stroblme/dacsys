@@ -1,0 +1,2668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="Googlebot" content="index,follow">
+  <title>High Re-Solution Audio with Raspberry Pi2 B+ I2S DAC DIY</title>
+  <link rel="stylesheet" type="text/css" href="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/style90ras.css">
+   <link rel="shortcut icon" href="http://single-ended.com/images/favicon.ico">
+  
+</head>
+<body>
+<table class="head">
+<tbody>
+<tr>
+<td class="head1">
+<div lang="EUC-JP"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-dac-diy.jpg" alt="*"> &nbsp;<span style="color: rgb(9, 163, 150);">Raspberry Pi B+ for Sound source 
+</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<h1>Let's try to use Raspberry Pi B+ Pi2 Pi3 for Audio source ,flac,DSD HiReso Audio DAC DIY</h1>
+<br>
+<h3>But "Dont see big Dream with Raspberry Pi 2 ,this is one of Toy Arm MPU board</h3>
+<h3>Raspberry Pi 2 and Raspberry Pi family  are ,impossible run with Windows 10 even Linux with X</h3>
+<h4>Almost Toy and not PC ...much better use Intel Atom or x86 with Linux or Windows but ,,,this is small system is
+only can use Linux for Arm.
+<br> But Not for Linux x86 x11 .
+<br>Actually Arm Linux are not Native Linux Smart phone too, just family of Linux and have to use x86 Linux 
+<br>right now we can buy Pi  Zero. actually Pi Zero A + but I think much better for hand held Music server 
+<br>Note:in Japan any one can not buy only Pi-Zero,Pi-Zero-W PC board.so price is more than USD $ 30.Market of Japan is funny.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi2zero.jpg" alt="Pi2 zero" width="300" height="236"></center>
+<h3><font color="#ff0000">Pi Zero Made by Sony Japan but Arm 6 </font></h3>
+<h10>Access <a href="http://single-ended.com/2A3/archive/allmysite-log.xls" target="links">all site in a Day</a></h10>
+<br>
+<h4>Your OS of PC is
+<script language="JavaScript">
+<!-- Beginning of JavaScript -
+var info ="<FONT COLOR=red>" + navigator.appName + " " + navigator.appVersion + "</FONT>";
+document.write (info);
+document.write ("of PC terminal ");
+// - End of JavaScript - -->
+</script><font color="red">Netscape 5.0 (Windows)</font>of PC terminal 
+<br>If did you see X11 means family of UNIX and Navigator.</h4>
+<br>
+<a href="http://singleended.web.fc2.com/index.html"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/home.png" alt="home " width="70" height="61"></a>
+<!--誤作動、誤表示の原因となりますのでコードの改変、改行は行わないで下さい。このコメント部分は削除して頂いても結構です。-->
+<a href="http://www.free-counter.jp/">
+<img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/a.gif" alt="アクセスカウンター" border="0"></a>
+<h4>counter started 15th Feb 2015</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/raspberry-pi-b.jpg" alt="Raspberry Pi B+" width="640" height="480"></center>
+<br>
+<h3>And Pi zero W  Feb 2017 </h3>
+<br>
+<a href="http://info.flagcounter.com/9MAt" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/a.png" alt="Flag Counter" target="links" style="display: none !important;" hidden="" border="0"></a>
+<br>Start 18th Mar 2015
+<br>
+<h10><a href="http://single-ended.com/why-dont-use-raspberry-pi-jp.htm">日本語</a></h10>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi-zero-w.jpg" alt="Debut Pi Zero W " width="300" height="206"></center>
+<h3>And Debut   Pi Zero W  USD $ 10 (Wifi and Bluethoooth),But Arm6 </h3>
+<h4>
+<br>RPi 3 is now available 2016 end of Feb, USD $39.　they said 10 times more high speed than RP2 B Type.
+<br>and has Bluetooth so consumption power is 2.5A.
+<br>Raspberry Pi Foundation is why still do not use Intel Processor ? ARM is Kind of TOY as you know.
+<br>Wifi and Bluetooth Model is can not sale in Japan, I think in USA too under FCC license .Rap Foundation hold FCC ? 
+<br>so many country can not sale ... one thing ,, Raspberry Pi are until Pi2. even Pi3 is kind of TOY PC. not value to buy.
+<br>Problem of Lazy Arm Processor..Do not buy bad performance of Product
+ any more.Pi3 can not install native Windows 10, Windows 7,8 ?
+<br>Answer is never.only Linux for Arm. Linux for Arm does not install WINE. so only element of small server system or Robot .
+<br>nothing special .
+<br>there are kind of TOY. if would like to buy as PC ,,much better buy MOUSE PC.or <a href="http://wildtame.co.jp/project/intel-edison-lab" target="links">Intel Edison</a>
+<br>much better PC is <a herf="http://jisakupc-technical.info/wp-content/uploads/2015/10/1510110204.jpg" target="links">AM1I-A mother Board</a>
+<br>C/P is Very Best.and very low cost.if buy Pi3 Arm ,I will buy <a href="https://www.asus.com/Motherboards/AM1IA/" target="links">AM1I-A PC still expensive for one of pocket money.</a>
+<br>And Powerfull new PC is<a href="http://www.udoo.org/udoo-x86/" target="links">Call it's UDOO x86</a>This is supported x86 ,Lunux ,Windows Made by Intel and Best C/P.	
+<br>do not buy any more Raspberry Pi 3 ~ ,enough to buy until Pi2 or 
+B+.Raspberry Pi is stop because only Arm is very slow.you can use for 
+very small system.
+<br>and now you can use new system from Udoo.one thing very good for 
+Audio because has SPDIF out and any thing can do ,you would like to use 
+.......even can use as Work Station.
+<br>so you can watch Internet TV too.is not kind of Toy any more.
+</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/intel-insideUP-Core.jpg" alt="UP Core" width="691" height="387"></center>
+<h3>UP core by Intel ,very small one board PC for x86 and Windows<a href="http://www.up-board.org/upcore/" target="links">UP Core </a></h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/RPi3-made-in-Japan.jpg" alt="RP 3 made in Japan" width="1024" height="789"></center>
+<h3>Raspberry Pi 3 Made in Japan by Sony ,just show you above</h3>
+<center><font color="#ff0000"><a href="https://www.raspberrypi.org/blog/tag/sony/" target="links">Made by Sony UK</a></font></center>
+<br>
+<br>
+<center><a href="https://www.raspberrypi.org/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/raspberrypi-step.jpg" alt="Raspberry pi" width="992" height="239"></a></center>
+<h3>Introduce Raspberry Pi</h3>
+<br>
+<br>
+<br>
+<h1>But Raspberry Pi is good for Small Music Server in your house </h1> 
+<br>
+<br>
+<h4>BB(Ti) PCM5102A I2S DAC LSI can play from 32Khz to 358 Khz of PCM 
+sound and DSF into DoP (PCM), DSD Music can play as DoP (PCM) of all 
+Music.easy to configure 
+<br>and easily to build up D.I.Y and sound is quite good.you can get high end sound from your small gear.
+<br><font color="#ff0000">Recommend to USE ES9018 family DAC and ES9023 DAC for DoP,DSD play</font>one thing important ..Raspberry Pi I2S DAC can not play 24,32bit 
+<br>Sound.is this only problem of Raspberry Pi Music Server.??????? Kind
+ of Toy ?????? 16bit Player no Hireso....???????big question ..I 
+have.now 1st Mar 2016.
+<br>I do not have ES9018 DAC so I can not get correct answer...if 
+PCM5102a I2S DAC Using 16bit sound either indicated DSD, 24 bit 48 
+Khz.etc.
+<br>
+</h4>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/USB-HDD.jpg" alt="USB HDD(SATA)" width="1000" height="428"></center>
+<h3>Inside of Volumio ,USB means HDD on USB(SATA= 1 Tera)just connected USB Port on Rasp +B</h3>
+<br>
+<h4>Black box is 1 Tera HDD = hook up with Raspberry Pi B+ USB Port.USB 
+HDD is SATA inside of Black box. Black box is one of adapter of SATA to 
+USB.
+<br>not expensive,around USD $20 you can buy PC local shop.SATA is 2.5 
+inch 1 tera HDD(about USD$ 50 ). off course necessary power supply of 
+5V(small one for smart phone)can be use.
+<br>and with USB HUB for connected with Raspberry Pi B+ and USB HDD.
+<br>there are small Music Station in room. not difficults.can be use as small NAS with Raspberry Pi B+. any one can do.
+</h4>
+<!-- [FC2 Analyzer] http://analyzer.fc2.com/  -->
+<script language="javascript" src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/processor.js" type="text/javascript"></script>
+<noscript><div align="right"><img src="http://analyzer5.fc2.com/ana/icon.php?uid=953205&ref=&href=&wid=0&hei=0&col=0" /></div></noscript>
+<!-- [FC2 Analyzer]  -->
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/VolumioRASPB.jpg" alt="Volumio 1.55" width="512" height="370"></center>
+<h3>Raspberry Pi B+ Music Server on Yaesu FT450D</h3>
+<br>
+<br>
+<center><iframe src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/lpq_SUQU7oE.htm" allowfullscreen="" width="854" height="480" frameborder="0"></iframe></center>
+<h3>Playing Web Radio by The Groove Jazz under Volumio 1.55 + PCM5102A/PCM5142 I2S DAC  show you from "YouTube"</h3>
+<h4>Spec: Vertical Twin Speaker by Yamaha , Power Amplifier is 300B 
+Single Ended Amplifier , Valves are PSVANE 300B ,Audio Transformer is 
+H20-3.5U hashimoto
+<br>Music server is Raspberry Pi B+ Volumio 1.55 (Music Player Daemon 0.19.9) DAC is I2S PCM5142 
+<br>and USB port connected external USB DAC (6DJ8 +FN1242A 24bit DIY/DAC)
+<br>This is not special ,,any one can do build up one Music server into your house.any one can do !!! not expensive
+</h4>
+<br>
+<br>
+<br>
+<h4>Note:on 18th Mar 2016...The Jazz Groove was replace protocol so from yesterday can not catch correctly webradio under volumio.
+<br>I am doing ask to The Groove Jazz Station ,,very good station but 
+can not catch now.from them...very sad....but you can get playlist from 
+site 
+<br>then source can get here<a href="http://www.radiosure.com/" target="links">then can get information of URL</a>
+<br>The Groove Jazz can replace for moment from $wget 
+http://www.single-ended.com/rasp/archive/webradio/WEBRADIO.tar.gz for 
+Volumio so you can install into volumio.
+<br>and later I got mail from the Groove Jazz/ Mr Paul G and gave me 
+next link http://thejazzgroove.com/listen/thejazzgroove-west-mp3-128.pls
+ for replace but only Volumio does not play.
+<br>can play from $ xine http://thejazzgroove.com/listen/thejazzgroove-west-mp3-128.pls . but under mpd could not play with volumio.
+<br>thank you Paul ... any way can play my edited file are $wget 
+http://www.single-ended.com/rasp/archive/webradio/WEBRADIO.tar.gz  
+please try and enjoy.  
+<br>Zip file is here http://www.single-ended.com/rasp/archive/webradio/GrooveJazz.zip 
+<br>
+<br>The Groove Jazz,playList are</h4><a href="http://thejazzgroove.com/listening-options/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/thejazzgroove.jpg" alt="the Groove Jazz" width="166" height="59"></a>
+<br>
+<h4>
+<br>Note: up date 3rd Dec 2016 a part of Audio Phile Jazz Classic file up  date
+<br>wget http://www.single-ended.com/rasp/archive/AudioPhile.tar.gz   
+<br>into 
+<br>$ mkdir tmp
+<br>cd tmp 
+<br>tmp $wget http://www.single-ended.com/rasp/archive/AudioPhile.tar.gz
+<br>sudo tar xvzf AudioPhile.tar.gz -C /var/lib/mpd/music/WEBRADIO
+<br></h4>
+<br>
+<br>
+<h4>Why still are you using,, high end audio equipments and they are 
+super expensive,,,but Raspberry Pi B+ can be use for Music server and
+<br>Reproduce high quality of sound like flac, Wav and DSD Audio(Diff 
+and DSX convert DoP PCM) through if do you have good DAC much 
+better.even Raspbeery Pi can
+<br>do PCM5142/5102A  BB high end DAC until 384Khz 32Bit sound, made by small PCB.not expensive. 
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-USB.jpg" alt="Raspberry　Pi B+ 2014 Dec" width="640" height="480"></center>
+<h4>Still I need good PC for ripping and have to buy source from 
+internet(online). if do you have Good DAC probably reproduce good sound 
+from Raspberry Pi B+ Music 
+<br>server.Raspberry Pi B+ is very small PCB actually small PC for kids in UK.but for Audiophile can be use for Music source.
+<br>how much cost ? only around USD $ 30 dollars and micro SD memory, 
+and connection cables. if would like big capacity of memory , you can 
+use USB SATA HDD of few Tera Byte.
+<br>I am using one(1 Tera)byte of USB HDD and 2 of NAS. 2 of NAS are 
+using old PC. old PC located corner of room etc.only need one PC for 
+work station.
+<br>even can be use control by Wifi smartphone. what is Music server and
+ Music server using Linux OS. distrobution 2 of them  are famous 
+.Volumio and RuneAudio.
+<br>please try to use Raspberry Pi B+ in your audio room.
+<br>OS where get from ?  
+<br>one thing Raspberry Pi does not have master clock for I2S (The 
+Inter-IC Sound Bus)DAC without general DAC so must be made Master clock 
+,, idea have some mulifier IC using and will be get master clock from
+<br>Bck which is using NB3N2302,　PI6C4511WE-ND　,ICS570,  LTC1799　so some day I will try hookup my DAC　with Raspberry Pi B+..
+<br>
+<br>PCM5102a Single DAC is very nice sound to getting. please try to 
+build up.less than USD $ 15 dollars cost if do you build up by your 
+self.
+<br>
+<br>If easy to get master clock ,,,,not difficult connect any DAC with Raspberry pi with I2C and I2S .so what can I do to..........
+<br>this is my home work right now.
+<br>
+<br>
+<br>Feb 2015 ,,,Now we can get 900 Mhz 4 core Raspberry pi P2 ,,,,and in
+ future MS will be support with Windows 10 ...what's will be.... 
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-I2S.jpg" alt="Volumio 1.55 " width="1341" height="799"></center>
+<br>
+<center><a href="http://volumio.org/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-org.jpg" alt="Volumio ORG" width="196" height="32"></a></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-org1.jpg" alt="initial of Volumio" width="1170" height="238"></center>
+</h4><h3>Volumio2 support x86 so you can use Intel from July 2016 and support many plat home </h3>
+<h4>Note: Volumio 2 does not work fine from after 
+Volumio-2.185-2017-6-03.zip so no more new version of Volumio2 and new 
+version is not support dsd file name
+<br>ssh and so many thing are limited new version of Volumio 2 ,please 
+use until Volumio-2.185-2017-6-03.zip if Volumio 2 new one does not work
+ fine.
+<br>and New Version are not free.going down quality but non free...
+</h4>
+<br>
+<br>
+<h4>and can use BeagleBone Black with Master Clock by I2S.</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Volumio2-Oct-2016.jpg" alt="Volumio2 wall paper on 2016 " width="1300" height="731"></center>
+<h3>This is New Volumio can choose any your images for wall paper</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/USB-HDDdetect.jpg" alt="HDD Detect " width="1000" height="415"></center> 
+<h3>forum said ,plugin USB connector few times take out and in when Start Volumio2 then can use USB HDD</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Rune-audio2015.jpg" alt="Runeaudio " width="1340" height="755"></center>
+<br>
+<center>2)<a href="http://www.runeaudio.com/" target="links"> RuneAudio ORG</a></center>
+<br>
+<br>3)Mr Holriy 's Archives<a href="http://horliy.seri.gr.jp/Volumi155-150514.lzh">3rd Party Volumio 1.55 with Master Clock </a>
+<br>**Mr Horly Web Site<a href="http://horliy.seri.gr.jp/mt/horliy-blog/2015/05/" target="links">New Volumio 1.55 please see by tradiction site</a>
+<br><h4>this version does produce master clock so can use any DAC with 
+I2S,detail is ,,,will you visit his site please but only Japanese .
+<br>this volumio has much option include indicate IP by LCD.left justfi 
+24bit etc.Master Clock put out from GPIO4.he said any kind of DAC will 
+be get sound.</h4>
+<h4>and Raspberry Pi from</h4> <a href="http://www.raspberrypi.org/" target="links"> <img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/raspberryPi_logo.gif" alt="Raspberry Pi " width="70" height="90"></a>
+<br>
+<h4>4) Introduce MOODE Audio Player
+</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/mood.jpg" alt="mood " width="975" height="736"></center>
+<h4>This is other side of Volumio and RuneAudio..Call it's MOODE AUDIO　for RaspberryPi .Down load is <a href="http://tcmods.org/" target="links">MOODE AUDIO</a>
+<br>just like Rune Audio.some one said very stable.forum is <a href="http://www.computeraudiophile.com/f11-software/moode-audio-player-raspberry-pi-23858/" target="links">Here is Moode-Audio</a>
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/moode2.jpg" alt="Moode Raspberry pi" width="1344" height="728"></center>
+<h3>sound is quite good and can play DSF too but can not access by ssh 
+so just kind of music player for raspberry Pi much better RuneAudio</h3>
+<h4>Both type of Volumio holy(Japanese) and moode are same family is not
+ stable.can do reproduce DSD64 .this moment only 1.55 of Volumio is 
+stable to use.
+<br>But these DSD are as under DoP(PCM) . DSD convert PCM(DoP).
+</h4>
+<h5>The Front End of MPD and Mopidy</h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rompr.jpg" alt="Rompr " width="650" height="639"></center>
+<br>
+<h10>The Front End <a href="https://sourceforge.net/projects/rompr/" target="links">MPD and Mopidy</a>just like cantata and GMPD</h10>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/gpio.jpg" alt="asigne " width="410" height="624"></center>
+<h3>Assignment of GPIO raspberry PiB+</h3>
+<br>
+<br>
+<h5>Schematic Diagram is next ,single IC mode </h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102-DAC-Rasp.png" alt="DAC for Raspberry Pi B+" width="800" height="600"></center>
+<h3>Circuit is very simple and easy to get sound ...how about ? </h3>
+<br>
+<br>
+<h4>One thing ,one of big problem of Raspberry Pi B+ is does not have Master-clock(SCK) signal so we can not use any kind of DAC IC,
+<br>SCK of PCM5102 must be connected with ground.
+</h4>
+<br>
+<br>
+<h5>PCM5102A Inside ,,Raspberry Pi B+ DAC </h5>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-DAC-inside1.jpg" alt="" width="674" height="499"></center>
+<h3>built up 2 of them ,,,very budget DAC because DIY and sound is great ,cost is around USD $20 dollars</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-DAC-inside3.jpg" alt="raspberry pi B+ とDAC" width="686" height="502"></center>
+<h3>DACと、Raspberry Pi B+ hook up ,,very small Music Server</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-DAC-inside4.jpg" alt="Raspberry Pi B+ とDAC" width="555" height="420"></center>
+<h3>DAC and Raspberry Pi B+ will be working for Music Server.</h3>
+<br>
+<br>
+<h4>much better use PCM5102a for Raspberry Pi family. very much stable 
+to get good sound and can be change sound connected coupling capacitor.
+<br>with out put of PCM5102a and direct to input of an amplifier.
+</h4>
+<h5>If would like to use Raspberry Pi 2 or Pi B+ etc. what is need for use ?</h5>
+<br>
+<h4>
+<br>(1)Raspberry Pi 2 B type or Pi B+ (this is small arm architectur　board PC)as you know (RS Components can buy)
+<br>(2) DAC USB type DAC has USB input  if you do not have one,, please 
+build up DAC by PCM5102a TI easily to build up. even DAC has DSD much 
+better.
+<br> PCM5102a small DAC is very easy to build up and will be get good 
+sound.you can by Digikey and RS component any where in the world.
+<br>(3) micro SD card (less than 16 giga byte),much better use 32 Giga Byte.
+<br>(4)PC Main PC any OS of PC for access by ssh (Main PC is Windows,MAC, Linux etc )
+<br>(5)Power supply of 5V 3A with micro USB connector with cable.
+<br>(6)if do you have SATA USB HDD or NAS ,if does not have those 
+elements, need one of USB memory big much better for ex less than 64 G 
+byte.
+<br>my case is using SATA HDD 1 tere byte with USB BOX.USB box adapter can be use SATA HDD to USB Memory on-line as just like NAS.
+<br>even you can use old PC with LAN for NAS .
+<br>(7)LAN cable and System of LAN in your house or your company.
+<br>(8)USB Cable
+<br>---------------------------------------------------------------------------------------------------option
+<br>(9)USB Key board(not necessary but if would like to use with HDMI monitor )
+<br>(10)Mouse
+<br>(11)Monitor HDMI 
+<br>and Music Server application, there are Linux OS.Volumio or 
+RuneAudio even Free NAS etc.Volumio or RuneAudio can convert High 
+Quality sound passing trough 
+<br>to your DAC or I2S type DIY DAC into your sound system. please try to build up PCM5102a small DAC. sound is good.!!!!!
+<br>Note: Often does not get sound from DAC ,probably got damages LSI 
+DAC then replaced PCM5 xxxx IC fixed,so what's meaning OUT PUT line of 
+DAC have to connect
+<br>coupling capacitor then hook up some resistance like 47K ohm respect
+ ground for load.then feed to Maim Amplifier or Pre Amplifier much 
+better to use.
+<br>Note: Micro-SD flash memory must choose "Class 10".you can use any 
+Micro SD but slow.so please use Class 10.a little bit high cost than 
+regular Micro SD.
+<br>if Do you have Windows PC for install Linux into Raspberry PI need 2 of applications for help.
+<br>A) format application.&gt;&gt;&gt;&gt;&gt;Micro SD Format<a href="https://www.sdcard.org/index.html" target="links">Micro SD</a>Formatter application from SD Association
+<br>B) image installer....&gt;&gt;&gt;&gt;&gt;Win32Disk Imager <a href="https://osdn.jp/projects/sfnet_win32diskimager/releases/" target="links">Imager File Site</a>to show
+<br>You need 2 application for to get OS and install image to micro SD for Raspberry PI.
+<br>so not difficult.even If do you have Linux workstation or Linux 
+Terminal ,you can format and install by command line.as you know.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/out-putDAC.png" alt="DAC 出力" width="376" height="203"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Diagram-at-home-RaspberryPi2.png" alt="connection" width="1000" height="700"></center>
+<h3>Connection of Raspberry Pi2 by Volumio at home</h3>
+<br>
+<br>
+<h5>Add  Master Clock to general DAC </h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/LTC1799-module.jpg" alt="LTC1799 module" width="410" height="415"></center>
+<h3>very small unit osclate for Master Clock,,,may be...</h3> 
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/LTC1799-OSC.png" alt="Master Clock" width="700" height="600"></center>
+<h3>Master Clock Osclator<a href="http://www.linear.com/product/LTC1799" target="links">LTC1799-SPEC</a></h3>
+<br>
+<h4>Best simple Mastar Clock OSClator in the world.Just try to make Master clock for other DAC PCM1794 ,PCM5124, FN1242A ........
+<br>
+<br>24.5760 Mhz = 48Khz,96Khz,192 Khz and
+<br>22.5792 Mhz = 44.1Khz,88.2Kz ,176Khz will be make Master Clock for DAC.
+<br><a href="http://cds.linear.com/docs/en/datasheet/1799fc.pdf" target="links">Spec of LTC1799 PDF file</a>
+<br>can make time base clock and can divide 1/10 and1/100 with 3 position of switches.if power supply is +5V can be use until 30 Mhz
+<br>and can be use until 20 Mhz when power supply is +3V. frequency is just show around 24 Mhz so must be use +5V Vcc.
+<br>Data 1: +5V  Set R must be use 5K pot.for 24M hz and if possible to use some buffer or LC transformer.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/1799.jpg" alt="1799 osc" width="448" height="340"></center>
+<h3>24 Mhz frequency very stable on 5th Apr 2015</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/onda.jpg" alt="波形　1799" width="410" height="306"></center>
+<h3>triangle wave ,,just not sine wave ...to see </h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Master-clock.jpg" alt="Master Clcok " width="471" height="347"></center>
+<br>
+<h4> Just doing test by Master Clock ,,with LTC1799 OSC ,actually does 
+not need frequency counter for adjust correct frequency.just turn screw 
+of pot by screw 
+<br>driver like tune frequency with radio dial.frequency is 24.576 
+Mhz.POT is 3K ohms .sound is a little bit more clear and getting a 
+little bit more bass.but some time get 
+<br>noise.like pi! but sound is really good than before . more　widely 
+and good bass ,,only some time to get noise.noise like scrach,,,on LP.
+<br>much better use Xtal module more useful and more cheaper.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/mo1799.jpg" alt="modules" width="347" height="261"></center>
+<h3>simple circuit ,module and potentiometer 3K ohms </h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/xtal-module.jpg" alt="Xtal" width="60" height="56"></center>
+<h3>instead of LTC1799 much Stable and more useful</h3>
+<h5>Then,,,, but some time getting noise from OSCilater</h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pll-Xtal1.jpg" alt="Epson PLL Xtal" width="305" height="222"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/aki-epson-xtal-pll.jpg" alt="秋月" width="234" height="171"></center>
+<h3>programable crystal osc unit 1Mhz to 125 Mhz </h3>
+<br>
+<h4>SG-8002DC/DB by Epson Japan.  
+<br>Jitter 250 ps/output load=15pF Max indicated on Spec and actually 2 
+type of power supply 3.3V and 5V .can be program by special tool of 
+them.
+<br>osc is from 1Mhz to 125Mhz.very cheap and consumption power is quite low. 
+</h4>
+<br>
+<br>
+<h4>So,,, added buffer with TTL IC....circuit is next one
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102-DAC-RaspV2.png" alt="schematic diagram add buffer circut 10th Apr 2015" width="800" height="600"></center>
+<br>
+<h4>Then Tested .....with buffer stage ,,does not get some noise ....and
+ using internet Radio high resoulution ,,sometime got noise from line 
+condition.
+<br>with Master Clock ,,very low level of noise are getting but 
+often.much better than before.and does not get noise from Master Clock 
+oscilator any more.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Test-1799-rasp.jpg" alt="Testing Master Clock 10th Apr 2015" width="584" height="321"></center>
+<h3>Just testing InterNet Radio with Master Clock,,sound is much better than before.10th Apr 2015</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5124-I2S-Raspberry-pi3.png" alt="DAC master clock " width="800" height="600"></center>
+<h3>Xtal using for Master Clock ,,problem of noise was capacity of power supply then right now get small noise getting 
+<br>when start Raspberry Pi DAC.then right now fine.this is good DAC and simple is good</h3>
+<br>
+<h4>Manualy can do
+<br>24.5760 Mhz = 48Khz,96Khz,192 Khz and
+<br>22.5792 Mhz = 44.1Khz,88.2Kz ,176Khz  one of switch can switch by 
+manual.in general InterNet Radio made up 24bit 44.1 Khz so need 22.579 
+Mhz Master Clock.
+<br>
+<br>These kind of DAC does not need Master Clock. contain PLL Mater 
+inside of PCM51XX DAC. if would like to add please use Master Clock with
+ sync.because get some noise.
+<br>or no master clock.
+</h4>
+<h5>How about Mr Horly's Volumio 1.55 3rd version archive</h5>
+<br>
+<br>
+<img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5124-I2S-Raspberry-pi4.png" alt="3rd Party Volumio with Master Clock." width="800" height="600">
+<br>
+<h4>Show you 3rd party Volumio 1.55  modificated by Mr Horliy ,circuit 
+is show above.GPIO 4(Pin 7 is GPIO 4) connected direct with SLCK of 
+PCM5142.
+<br>a little bit has noise.but not so bad.
+<br>I can use any DAC without Master clock. Maste Clock came from 
+Raspberry Pi B+ with his archive ,Volumio 1.55 horly version. using 
+internal clock for 
+<br>remote control clock. please try it. Mr Holriy 's Archives<a href="http://horliy.seri.gr.jp/Volumi155-150514.lzh">3rd Party Volumio 1.55 with Master Clock </a>
+<br>works quite good. sound is very clear too please try to use...recommend.
+<br>
+<br>
+<br>so what to do,,,, still I am getting noise from with Master Clock 
+.....master clock have to make sync with internal signal of DAC.many 
+case use LRclock or Bit Clock.
+<br>then ,,, I made order multiple IC like ICS570 or ICS512 for will be get synclonize master clock. with use any DAC.
+</h4>
+<h4>So 、I got 2 of ICS512 $4 dollars each in Japan.to get 3.072 Mhz 
+signal from BCK into crystal pin as pin1、S0,S1 are pull up ,connected 
+directly Vcc  Multipulier works as X 8.
+<br>Volumio 1.51 how was work....does not get any noise .works fine.so I
+ will make some slave DAC with Raspberry Pi,.PCM1794 or FN1242A ,PCM1716
+ etc.because I do not any
+<br>stock in my parts box.plays quite good with PCM5142.muy bien,,,,
+<br>still if do you have some noise please check RCA cable .good cable need.
+<br>will show you pictures.(2nd May 2015)
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/ICS512test.jpg" alt="テスト中" width="550" height="409"></center>
+<h3>Testing ICS512 and I2S DAC..<a href="http://single-ended.com/rasp/ics512mit.pdf" target="links">SPEC ICS512</a></h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5142-I2S.png" alt="Ref" width="800" height="600"></center>
+<h3>Schematic is same as PCM5102A same just different pin of IC</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/24Mhzmaster.jpg" alt="24.5760Mhz" width="453" height="335"></center>
+<h3>I got 24.5760 Mhz pin 8 of ICS512  and let' me show you circuit.</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5124-I2S-Raspberry-piBtest5.png" alt="circuit diagram Master clock...." width="800" height="600"></center>
+<br>
+<h4>Sound is very clear and does not get any noise like before.so Master
+ Clock is good for DAC. but these kind of DAC does not need Master Clock
+ any way.
+<br>so I will start build up ,slave D A C using other type of DAC IC with Master Clock.and assignment of IC is next.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/ICS512-PINS.jpg" alt="patern " width="640" height="420"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/master-clock-bck.jpg" alt="with Master Clock" width="549" height="401"></center>
+<h3>Mounted　Master Clock from BCK ,good work</h3>
+<br>
+<br>
+<h10><a href="https://volumio.org/product/allo-kali-i2s-reclocker/" target="links">Re-Locker and Piano I2S DAC from Volumio</a>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/relocker-volumio.jpg" alt="Volumio ReLocker on Oct 2016" width="539" height="674"></center>
+<h3>Volumio recommend Re-Locker and Piano DAC(ES9023 SABRE )</h3>
+<br>
+<h5>Next One  PCM5102A L/R Separate  DAC</h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/LR-sepa.png" alt="Sparate Circuit PCM5102 " width="960" height="480"></center>
+<br>
+<h4> As you know PCM5102A single DAC is good enough ,but how about separate each other Left and Right channel.
+<br>circuit show above ..just only time base circuit for 32 bit delay at
+ left channel data.right now I will build up 2 channel DAC and using 2 
+of PCM5102a 
+<br>circuit is copy of some circuit got from online.SN74164 is using and
+ there are Shift register IC(TTL),,you can use any kind of shift 
+register TTL.
+<br>much better use with PCM1794 mono mode .
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/FN1242A-Music-server-RPI.png" alt="general DAC" width="900" height="700"></center>
+<h3>for General DAC if would like to use,this case is FN1242A 24bit 198 Khz DAC </h3>
+<br>
+<h5>Tested Again on 　2016 .Dec 22</h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Rasp-ProPCM5142.png" alt="Rasp I2C " width="800" height="600"></center>
+<h3>I2C　DAC raspberry Pi B+ + Volumio of Schematic diagram</h3>
+<h4>This is correct circuit of DAC for I2C , it is not I2S. this circuit
+ is only 48 Khz sampling and 192Khz because can not get correct crystal 
+for 44.1Khz
+<br>Just same circuit of HifiBerry and can be use for other DAC need Master Clock.like PCM 1974, FN1242A etc.
+<br>22nd Dec 2016 
+</h4>
+<br>
+<h5>If does not get sound from DSF file etc</h5>
+<br>
+<br>
+<h4>If does not get sound from DSF ,Diff etc about DSD files but not DSD with I2S signal. please try #raspi-config Update show next</h4>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/advance.jpg" alt="Update" width="1112" height="231"></center>
+<h4>then next photo</h4>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Update.jpg" alt="Update2" width="1032" height="218"></center>
+<h3>Automatically Update data then you can get with Diff,Dsf and aiff files from MPD 0.19.10 </h3>
+<br>
+<br>
+<b>
+<h5>If would like to install LCD indicator </h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102-DAC-Rasp-LCD.png" alt="LCD indicator" width="800" height="600"></center>
+<h3>Circuit diagram show above 2 line 16 charactor LCD(EL) for Music Albums etc</h3>
+<br>
+<h4>Directly can not indicate ,necessary to install some program under 
+Linux using .py using ssh or HDMI output connect with monitor .have to 
+know
+<br>Linux.
+</h4>
+<h5>Head Phone Amplifier with Raspberry Pi B+ just show you circuit</h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102-DAC-Rasp-HeadPhoneAmp.png" alt="Head Phone Amplifier Raspberry Pi B+" width="800" height="600"></center>
+<h3>Schematic Diagram for Head phone Amplifier</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/headphone-amp.jpg" alt="Head Phone Amp Raspberry PI" width="367" height="264"></center>
+<h3>RPI Headphone and Music Server Volumio 1.55 on 23rd May 2015</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Raspbeerypi2015.jpg" alt="play Volumio 1.55 "></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/300B-SEandI2S-DAC.jpg" alt="Raspberry Pi B+ I2S DAC and external DAC FN1242A" width="707" height="433"></center>
+<h3>Main Amplifier 300B Single Ended Amplifier and Raspberry PiB+ I2S DAC 2015 Dec 18th </h3>
+<br>
+<br>
+<h5>Finally going to 6DJ8 Valve Buffer with Raspberry Pi B+ DAC</h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102-DAC-Raspberrypi6DJ8.png" alt="DAC 6DJ8 Raspberry Pi B+" width="960" height="640"></center>
+<h3>Finally will build up  6DJ8 I2S DAC with Raspberry Pi B+ MUsic Server</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DAC-Rasp6dJ8.jpg" alt="Raspberry Pi B+ 6DJ8" width="524" height="634"></center>
+<h3>Images like this.....6DJ8 DAC </h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h5>If does not get sound from your Raspberry Pi I2S DAC </h5>
+<br>
+<br><font color="#ffffff">first you must learn how to use nano editor.even you can use emacs ,vi editor for Linux.
+<br>if already login into Volumio then 
+<br># cd /etc/
+<br># ls -a or # ls -l  
+<br>you can see directory /etc  directory and choose modules by nano editor.
+<br># nano modules  
+<br>so right now you can edit file modules.text is next to see.
+<br>first time open nano ,you can see modules on nano editor.
+<br>to edite then Cont + O for save.
+<br>then Enter
+<br>Cont + x  for get out from editor.
+<br>then reboot.reboot is 
+<br># reboot
+<br> or 
+<br># shutdown -r now 
+<br>which ever same work for Linux command .
+</font>
+<h4>
+<br>
+<br>Please try to re-write name of driver at /etc/modules
+<br># /etc/modules: kernel modules to load at boot time.
+<br> # This file contains the names of kernel modules that should be loaded
+<br> # at boot time, one per line. Lines beginning with "#" are ignored.
+<br> # Parameters can be specified after the module name.
+<br> #snd-bcm2835
+<br>snd_soc_bcm2708
+<br>bcm2708_dmaengine
+<br>snd_soc_pcm5102a
+<br>snd_soc_hifiberry_dac
+<br>
+<br>
+<br>
+<br>few case if "snd_soc_pcm5102a" does not find please add this line of name of driver.and
+<br>please try to add /etc/asound.conf by root
+<br># touch /etc/asound.conf
+<br>then
+<br>#vi /etc/asound.conf
+<br>some time nano ,emacs instead of vi for write script by ssh access.
+<br>file is
+<br>
+<br>
+<br>
+<br>pcm.!default {
+<br>type hw card 0
+<br>}
+<br>ctl.!default {
+<br>type hw card 0
+<br>}
+<br>
+<br>
+<br>
+<br>
+<br>then 
+<br>pi@raspberrypi ~ $ aplay -l
+<br>**** List of PLAYBACK Hardware Devices ****
+<br>card 0: sndrpihifiberry [snd_rpi_hifiberry_dac], device 0: HifiBerry DAC HiFi pcm5102a-hifi-0 []
+<br>Subdevices: 1/1
+<br>Subdevice #0: subdevice #0
+<br>
+<br>if did you get above sentence ,will be fine to get I2S DAC.
+<br>
+</h4><h5> Easy to up date mpd 0.19.9 now from Volumio Site</h5>
+<br>
+<br>
+<h4>
+<br>sudo apt-get update
+<br>sudo apt-get install libmikmod3
+<br>wget http://repo.volumio.org/Packages/Mpd/mpd_0.19.9-2_armhf.deb
+<br>sudo dpkg -i mpd_0.19.9-2_armhf.deb
+<br>sudo apt-get -f install
+<br>
+<br>then reboot.
+<br>Just access and try to install mpd of version up.from <a href="https://volumio.org/forum/mpd-update-available-t3200.html" target="links">here</a>for update.
+<br>and then reboot ,try to use 
+<br>$ mpd -V 
+<br>then will be get  mpd 0.19.9 
+<br>right now will get 0.19.9 mpd. off course use under ssh.
+<br>sound is a little bit bright than before.if good quality of sound 
+please use NAS and HDD with USB. sound not from USB flash memory.
+<br>you can play DSD sound but DoP PCM from Native DSD source .
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/mpd-V.jpg" alt="mpd 0.19.9 " width="928" height="648"></center>
+<br>
+<br>
+Note: If one's using Volumio2 by ssh ,sometimes can not accept passwd from volumio2 . please try to use
+$ ssh root@192.168.xxx.x -l volumio
+<br>then try to access by ssh. then make volumio passwd. and sometimes can't accept ssh by Linux please try to delete .ssh 
+$ rm -R .ssh  then make access by ssh on Linux command line. 
+<br>
+
+<h4>
+<br><h10>how to access raspberry pi with out monitor</h10>
+<br>my case ....  I am using Fedora Core Linux long time. so my case is ,,using by terminal from  comand line.
+<br>$ arp 
+<br>you can get IP on terminal ...so find Raspberry pi IP in your 
+house(LAN).if does not have Linux terminal please try to use any OS 
+terminal
+<br>from any OS. teraterm is very famous in Japan for MS Windows.
+<br>so let's try to access from other PC.  
+<br>$ ssh root@192.168.1.5
+<br>then if did you connect with Raspberry Pi they ask pass word so just strike key pass word "Volumio" 
+<br>you can get login into Raspberry Pi ... so try to re write script of
+ driver. editor is emacs ,long time using emacs so much easily than
+<br>any editor for me. you can use vi ,nano etc. have to learn "how to use Linux with comand line" first.
+<br>that's all.
+<br>
+<br>About ssh.. in general ,ssh can access from other 
+Linux(Unix)terminal under terminal(xterm,kterm,gnome-terminal etc) if 
+one's using MS windows.
+<br>can be use teraterm , putty .for English much better use putty for 
+telenet.putty is just like same as Linux terminal if you are using 
+Windows please
+<br>make down load <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/" target="links">for PUTTY</a> can use same as Linux terminal under ssh.
+<br>so does not need HDMI monitor.
+</h4>
+<br>
+<br>
+<h4>So Raspberry Pi B+ can be use for Music Server and getting good 
+sound .She can play DSD (still not but) sound and High Resoulution 
+Audio.
+<br>have to try.
+<br>let's me see,,,, show you by picture...next
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-volumio.jpg" alt="Raspberry Pi how to" width="1005" height="499"></center>
+<br>
+<h4>then ,,,,,
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-volumio2.jpg" alt="Raspberry Pi configration" width="1005" height="499"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasp-volumio3.jpg" alt="Raspberry Pi configration" width="1005" height="499"></center>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/My-Net.png" alt="my house net work" width="800" height="600"></center>
+<h3>Sound getting from Raspberry Pi B+ and NAS </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/my-system-audio.jpg" alt="My System  " width="793" height="556"></center>
+<h3>Using as Music Server ,small server but very good for you</h3>
+<br>
+<br>
+<h3><a href="http://www.ti.com/product/pcm5102" target="links">PCM5102A Data</a></h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/sony-ericsson-volmil.jpg" alt="Raspberry pi + sony ericsson" width="707" height="517"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/celler-volumio.jpg" alt="Androido Volumio 1.51" width="698" height="518"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio.jpg" alt="konqueror + Terminal" width="1341" height="753"></center>
+<h3>Konqueror can do by ssh with browser  </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/cantata.jpg" alt="" width="1341" height="753"></center>
+<h3>Can watch into Volumio under MPD by Linux Terminal</h3>
+<br>
+<h5>Then into box on FT450D Yaesu Radio </h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Music-server-rasp.jpg" alt="Ham Station for HF" width="831" height="565"></center>
+<h3>SATA USB 1 Tera HDD with Raspberry Pi B+ DAC for Music server 2nd Mar 2015</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5124-I2S-Raspberry-piBtest5.png" alt="Raspberry PI B+ PCM5142 DAC" width="800" height="600"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5124-I2S-Raspberry-piBtest6.png" alt="version up 2015 18th July" width="800" height="600"></center>
+<h3>small version up of PCM5124 DAC </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/inside-server1.jpg" alt="inside of DAC and server 1" width="873" height="654"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/inside-server2.jpg" alt="inside 2 of Raspberry pi DAC" width="861" height="625"></center>
+<h3>Inside of Music server + Raspberry Pi B+ I2S DAC</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Dop-set.jpg" alt="Dop setup at Volumio" width="1445" height="731"></center>
+<h3>Dop setup,,then you can play DSD Native as Dop PCM ,,,,DSD converted to PCM </h3>
+<br>
+<h4>If do you have Native DSD player(DAC)and has USB input ,you can connect with each other Raspberry Pi B+ with USB cable and play 
+<br>Native DSD from your DSD DAC.same page of Volumio has position of type of Audio OUT PUT select your DSD DAC driver.
+</h4>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DoP-DSD-PCM.jpg" alt="DoP PCM Play raspberry Pi B+ Volumio" width="1276" height="716"></center>
+<h3>352.5Khz DSF/DoP plays by Narah Jones </h3>
+<br>
+<br>
+<h5>How to set up FIX IP (Static)</h5>
+<br>
+<h4>In general, these kind of Music Server ,PC at home are using DHCP. automatically set up IP. but Often can not connect Home LAN.
+<br>so much better use fixed IP. like 192.168.1.8   etc.first search 
+your Modem IP .if IP of Modem is 192.168.1.1 can setup fix IP for each 
+Music Server.
+<br>Volumio Case is  as root or $ sudo cd /etc/network/  then edit 
+interfacs of file by editer like vi, emacs and nano. which do you like.
+<br>you can see $ cat /etc/network/interfaces    like next frase/   so 
+if you know IP of modem in your house. please edit correct IP.
+<br>gateway is your modem IP  and address is Raspberry Pi Volumio 's 
+IP.which ever you like.then $ sudo reboot.you can connect LAN 
+automatically.
+<br>much more good for Music Server.if moved place of server. never lost again.next file is located  /etc/network/interfaces .
+<br>
+<br>auto lo
+<br>iface lo inet loopback
+<br>
+<br>
+<br>auto eth0
+<br>iface eth0 inet static
+<br>address 192.168.1.5
+<br>netmask 255.255.255.0
+<br>gateway 192.168.1.1
+<br>nameserver 192.168.1.1
+<br>
+<br>
+</h4><h5>How is sound from Raspberry Pi B+ with DAC PCM5142 </h5>
+<br>
+<h3>Does not have any noise from LAN and even "Breath-in phenomenon" now
+ .ICS512 is good for use Master Clock.slightly more bright sound getting
+ now.</h3>
+<h4> Volumio 1.55 with Raspberry PiB+ can do play DSF ,DFF file until 
+2.8Mhz but sound is not Native either can play DSD file.sound is good 
+enough with volumio 1.55 
+</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/music-server-volumio.jpg" alt="" width="696" height="540"></center>
+<h3>Top of FT450D Yaesu </h3>
+<br>
+<h5> how to add WEBRADIO Stations. more than 50 Stations good.from Volumio repositry </h5>
+<br>
+<br>
+<h4>This case is add a lot of stations from Volumio repository source.from ssh comand line through on line. 
+<br>first access by SSH with some terminal like xterm ,mate-terminal, 
+putty for windowa and teraterm for windows.etc my case is ,Volumio's IP 
+is 192.168.1.6 
+<br>then open terminal from other PC. 
+<br>#ssh root@192.168.1.6          
+<br>#passwd  volumio
+<br><font color="#ff0000">#cd /var/lib/mpd/music/WEBRADIO</font>
+<br>#apt-get install git
+<br>#git clone https://github.com/jprjr/internet-radio-streams.git
+<br>#cd internet-radio-streams
+<br>#./make_links /var/lib/mpd/music/WEBRADIO/ pls
+<br>#./make_links /var/lib/mpd/music/WEBRADIO/ m3u
+<br>
+<br>that's all, you can get more than 50 Radio Station for InterNet.<a href="https://volumio.org/forum/add-ton-webradio-streams-volumio-t1705.html" target="links">Reff Site</a>
+<br>and、if do you have Cantata,can add many Internet Radio,Cloud etc by 
+GUI from other PC(Windows,MAC,Linux etc)and easy to supervise your Music
+ .
+<br>Note***: This version is for Volumio 1.4 so can not make correctly 
+install each directly of stations holder.but you can get install .pls 
+into WEBRADIO.
+<br>if does not like ,pls files have to move each holder.with command of
+ Linux(Unix),problem is made only empty holder.and does not get m3u 
+files.many be some BUG.
+<br>and if use #git clone http: ~ instead of https ,much more station 
+will be get.forum does not indicated change position of command.so you 
+can try #pwd
+<br>you can know where stay command line... then #cd 
+/var/lib/mpd/music/WEBRADIO   then please try install pls and m3u 
+files.will be get more than 50 stations good music.
+<br>much more fun.!!!
+<br>if does not function #apt-get install git please try to update as 
+#apt-get update then #apt-get install git probably get good result.
+<br>this archive is inside of my volumio's WEBRADIO List's<a href="http://single-ended.com/rasp/archive/Radio-List.tar.gz">TAR.GZ files can see inside </a>if would like to use.
+<br>even can down load by $wget http://www.single-ended.com/rasp/archive/Radio-List.tar.gz  on terminal of Linux.
+<br>
+<br>
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/more-Station-volumio.jpg" alt="More Stations for WEBRADIO " width="1600" height="751"></center>
+<h3>Web Radio Stations List on Volumio　,Added from Volumio.org more than 50 Stations. </h3>
+<br>
+<br>
+<br>
+<h5>WEBRADIO of Volumio's radio station are, some of stations are does not play....how to fix and add new stations</h5>
+<br>
+<br>
+<h4>Because ,,IP is different with original site of stations so please 
+check IP address then replace IP or URL came from Music.or check 
+Shoutcast Site.
+<br>SHOUTCast<a href="http://www.shoutcast.com/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/shoutcast.jpg" alt="Shout Cast" width="227" height="65"></a>then check each site then get pls .m3U files.which do you like.
+<br>much better use SSH by other PC then save WEBRADIO on Volumio.、when 
+down load files always files are"tunein-station.pls" so please replace 
+name of file then
+<br>copy into Volumio WEBRADIO directly.so easy to get many station which do you like.
+<br>then Access by SSH Volumio.
+<br>#cd /tmp    
+<br>then   
+<br>#wget http://www.single-ended.com/rasp/archive/WEBRADIO.tar.gz 
+<br>  
+<br>#tar xvzf WEBRADIO.tar.gz -C /var/lib/mpd/music/ 
+<br> 
+<br>#rm WEBRADIO.tar.gz 
+<br>#cd 
+<br>#pwd
+<br>#reboot 
+<br>you can get more than 2000 stations 、have a fun. !!! make sure ,,, much better get original files from SHOUTCast.Radiomy
+<br>WGBH Boston of Classic 's quality is good.volumio indicated 24bit 48Khz ans sound is very pure and clear.include WEBRADIO.tar.gz
+<br>also located WEBRADIO.zip same directly of my site.if would like to use zip file too.off curse have to use unzip.
+</h4>
+<h5>Some Station can play then goes off ,no sound. ex ABC Radio, ABC Piano etc</h5>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-radio.jpg" alt="WEBRADIO Volumio" width="1667" height="933"></center>
+<h3>Add WEB Radio Stations into Volumio  </h3>
+<br>
+
+<br>
+<h4>above list show by other Linux PC's file manager using and see 
+inside of volumio.using samba.off course can do cut out some of file and
+ add files too.
+<br>not necessary to use command line ssh.but only can see inside of directly of samba(share)</h4>
+<br>
+<h5>How to remove(delete)play list on WEBRADIO in Volumio</h5>
+<br>
+<h4>This is not only Volumio. because Volumio is Linux so please use 
+command of Linux(UNIX),# rm xxxxxxxxx.pls which ever abcdef.mp3 etc.. 
+are one of file name 
+<br>#rm abcdef.mp3    that's all. you can remove one file which 
+indicated. either if you have some file manager like on Main PC then you
+ can see and delete by mouse.
+<br>simple way is access volumio by ssh by other terminal.then delete file.which would like to delete.please see 2 of picture.
+<h 4="">
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rm-playlist1.jpg" alt="ssh using access Volumio" width="1403" height="949"></center>
+<h3>Access by SSH then move to directly </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rm-playlist2.jpg" alt="delete file using Linux command" width="1353" height="932"></center>
+<h3>Delete file by command of Linux. very easy </h3>
+<br>
+<h4># rm can you remove only one file. so # rm abc-radio.pls if one of 
+holder name is Jazz-vocal , # rm -R Jazz-vocal  remove all of holder.</h4>
+<br>
+<br>
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" id="movie" width="320" height="230">
+	<param name="flashvars" value="fms_app=&amp;video_file=/2A3/fladance/movie/Raspberrypi.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=">
+	<param name="allowfullscreen" value="false">
+	<param name="movie" value="/2A3/fladance/fladance.swf">
+	<embed src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/fladance.swf" name="movie" allowfullscreen="false" flashvars="fms_app=&amp;video_file=/2A3/fladance/movie/Raspberrypi.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" width="520" height="230">
+</object></center><h3>Sound from Raspberry Pi B+ </h3>
+<br>
+<h3><h10>6DJ8 Valve <a href="http://single-ended.com/dac-valve.htm" target="links">24 bit 196 Khz DAC D.I.Y </a></h10></h3> 
+<br>
+<h5> Basic I2S DAC list of components </h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Rap-I2S-DAC1.png" alt="Basic Circuit DIY I2S DAC" width="800" height="600"></center>
+<h4>and components list is show next</h4>
+<center>
+<table font="" color="000000" width="60%" cellspacing="2" cellpadding="2" border="1" bgcolor="#ffffff">
+  <tbody>
+    <tr>
+      <td valign="top">Component<br>
+      </td>
+      <td valign="top">component name<br>
+      </td>
+      <td valign="top">Quantity(QTY)<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">IC I2S DAC<br>
+      </td>
+      <td valign="top">PCM5102A  BB by TI<br>
+      </td>
+      <td valign="top">1<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">Headder soket see No1<br>
+      </td>
+      <td valign="top">Headder for Raspberry pi B+ 40 pins<br>
+      </td>
+      <td valign="top">1<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">LSI pcb mount see No2<br>
+      </td>
+      <td valign="top">20 pins dual inline pins for PCM5102A<br>
+      </td>
+      <td valign="top">1<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">Capacitor film <br>
+      </td>
+      <td valign="top">0.1 uF 16V film <br>
+      </td>
+      <td valign="top">3~4 <br>
+      </td>
+    </tr>
+     <tr>
+      <td valign="top"><br>
+      </td>
+      <td valign="top">2200 pF <br>
+      </td>
+      <td valign="top">2 (depend on sound)<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">resistance carbon<br>
+      </td>
+      <td valign="top">470 ohm 1/4 W<br>
+      </td>
+       <td valign="top">2<br>
+      </td>
+      <td valign="top">
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">Capacitor non polar<br>
+      </td>
+      <td valign="top"> 2.2 uF 16 V<br>
+      </td>
+      <td valign="top">2<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">Electric Capacitor<br>
+      </td>
+      <td valign="top">47 uF 16V <br>
+      </td>
+      <td valign="top">2 or more<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><br>
+      </td>
+      <td valign="top">10uF 16V<br>
+      </td>
+      <td valign="top">1 <br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">small universal PCB<br>
+      </td>
+      <td valign="top">5cm x 7cm  <br>
+      </td>
+      <td valign="top">1<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">small LSI PCB for PCM5102A <br>
+      </td>
+      <td valign="top">see No3<br>
+      </td>
+      <td valign="top">1<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">Wire for backside PCB<br>
+      </td>
+      <td valign="top">Wire <br>
+      </td>
+      <td valign="top">around 10m<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">headder pins <br>
+      </td>
+      <td valign="top">see picture<br>
+      </td>
+      <td valign="top">some <br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">RCA out put<br>
+      </td>
+      <td valign="top">RCA connector for output<br>
+      </td>
+      <td valign="top">2<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">LED blue<br>
+      </td>
+      <td valign="top">LED Blue<br>
+      </td>
+      <td valign="top">1<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">Chassis(box)<br>
+      </td>
+      <td valign="top">box any type by aluminium<br>
+      </td>
+      <td valign="top">1&nbsp; <br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><br>
+      </td>
+      <td valign="top"><br>
+      </td>
+      <td valign="top">&nbsp; <br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><br>
+      </td>
+      <td valign="top"><br>
+      </td>
+      <td valign="top"><br>
+      </td>
+    </tr></tbody></table>
+    </center>
+    <br>
+<br><center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/main-uni.jpg" alt="backside of PCB" width="173" height="283">&nbsp;<img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/wire.jpg" alt="wire" width="290" height="155"></center>
+<br><h3>back side is just like above and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire for wiring </h3>
+<br><center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/adaptor-LSI.jpg" alt="adaptor and headder" width="413" height="318">&nbsp;<img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/headder-pin.jpg" alt="Headder and pins" width="377" height="202"></center>
+<br><h3>Adaptor PCB for LSI SSOP No3 and 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40pins 
+Headder connector and headder pins for addapt</h3>
+<br>
+<h4>So you can easy to build up I2S DAC less than 30 dollars ,box you 
+can use any kind of box. chocolete box...candy box etc but much better 
+use metal box.
+<br>simple circuit but will be get high reso sound from Raspberry Pi B+ 
+.flac,Wav, mp3 , any kind of archive of sound.until 358 Khz 32bit.
+<br>you can get from Digikey and RS components any where of local shop.very much simple circuit but will be get High Reso sound.
+<br>one thing very impotant,,, winter season some problem getting, one 
+of problem is broken LSI , sometime.I think cause of does not have 
+coupling capacitor.
+<br>so does not get sound from I2S DAC, replaced LSI then getting sound.
+ please be careful to use  around outside of audio out put circuit.
+</h4>
+<br>
+<h5>How to record Music from WebRadio Stations on Volumio</h5>
+<br>
+<br>
+<h4>First , make access by ssh raspberry pi server(Volumio) and install application for recode music
+<br>then on command line change position using keyboard.
+<br>#apt-get install streamripper
+<br>then , try to make  #streamripper  then something to get script ?  means OK.
+<br>then 
+<br>#cd /var/lib/mpd/music/RAMPLAY 
+<br>#mkdir mysong         ---&gt; this part is any name you can write. 
+which ever save-music etc.this case use "mysong"can make any name you 
+like.
+<br>#cd mysong
+<br>#streamripper http://listen.radionomy.com/smoothjazz247
+<br>right now you can record some music from stream.but must be write 
+correct URL after #streamripper  please use carefully because RAMPLAY 
+does not have much memory.
+<br>you can play music some day if recoded. next show photos.Music must 
+be save in USB memory much better.#Cont + C can stop recoder on Volumio .
+<br>one thing ,,smoothjazz247 can listen music all country. only USA and by smartphone app.any way can recode.
+<br>streamripper http://185.33.22.15:11230
+<br>above line is for
+<br>stream: 1.FM - Bay Smooth Jazz Radio
+<br>also one of good WEBRadio Station.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/streamripper.jpg" alt="install application on volumio 1.55" width="1263" height="556"></center>
+<h3>Install Streamripper on Volumio use #apt-get install streaamripper </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/cantata-and-recording.jpg" alt="recording for Raspberry pi server." width="1072" height="599"></center>
+<h3>Recording The Jazz Groove.com by another terminal on Linux </h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/replay-recorded.jpg" alt="re play music from Volumio,." width="1300" height="777"></center>
+<h3>Just re play Music from Ramplay on Volumio</h3>
+<br>
+<br>
+<h5>How is Raspberry Pi 2 EL14 ?</h5>
+<br>
+<h4>6 Times rapid than Raspberry Pi B+ ..... ?  last week I bought one 
+of brand new one of P2 but,,,actually I do not think does not get much 
+speed than B+.
+<br>I think ,,,, lie........ please wait buy new Raspberry Pi 2 ,,,,,,, I
+ am using 3 year old Sony Vaio with Fedora Core 18 ,,,50 times rapid 
+than Raspberry Pi 2.
+<br>I think Windows 10 can not function... with Rasp Pi 2........ What 
+will be ? where going to Raspberry Pi 2 ?    but depend on correct 
+window manager make it fast.
+<br>I did try watch Hulu but still just like toy PC. we have to wait Windows 10 for Raspbery Pi 2 ????
+<br> 
+</h4>
+<h5>Fedora 21 Remix install ----on 8th Mar 2015</h5>
+<br>
+<h4>Actually I do not like Ubuntu(Debian)family of Linux ,,,either I am using Fedora Core 18 Linux on my Vaio VPCJ2 working fine.
+<br>just would like to install Fedora into my Raspberry Pi 2 Btype .so I did get archive from <a href="http://www.digitaldreamtime.co.uk/images/Fidora/21/" target="links">Fedora core Remix 21</a>
+<br>each version of window manager need around 10 G byte of micro SD. 
+original archive is around less than 1 Giga byte but necessary install 
+on micro SD of around at least 32 G Byte.
+<br>first I got xz file from Digital Dream Time UK site. they has 4 type and see detail on Site.
+<br>please try to install ,,, then if does not make log in. please try 
+on command line as Cont + Alt + F2 can do command line, as root and 
+passwd is fidora.
+<br>then make user # adduser name-of-handle  then # passwd name-of-handle 
+<br>then # reboot you can do grafical login .if would like to upgrade 
+please try #yum update and #yum ugrade.for up grade of Fedora Rimix.
+<br>Fedora Core Linux is much faster than Debian and Ubuntu Linux I 
+knew.using until Windows 10 brand new.Wrote 8th Mar 2015 I am so sorry 
+bad english to wrote.!!!
+<br>I think ,,,,Raspberry Pi 2 is weak.100 % does not work Windows 10.
+<br>
+<br>One thing Raspberry Pi does not have hard time clock so can not adjust time so some time need adjust like
+<br># timedatectl set-timezone Asia/Tokyo  in my case...in Tokyo Japan... so your country is other thing.
+<br>please install # yum install ntp  too....
+<br>
+<br>Other thing,,,<a href="http://comments.gmane.org/gmane.os.freebsd.devel.arm/9836" target="links">FreeNAS</a>for Raspberry Pi can as NAS.how about...
+</h4>
+<h5>About Volumio 2 </h5>
+<br>
+<br>
+<h4>Please Volumio site, 
+<br><a href="https://github.com/volumio/Volumio2" target="link"> Volumio2 </a> you can get Beta1 Volumio2 right now.please try it's.
+<br>
+<br>
+<br>$ ssh of Volumio 2 is
+<br>just show you next figure. 
+<br>$ ssh volumio@your IP    then Passwd is "volumio".
+<br>very much stable to use.I am using under line of IPv6 line but 
+nothing problem .a month ago moved new place and this place using IPv6 
+and Ipv4 both of
+<br>protcol.almost one month does not play good and had been problem so replaced Volumio2.right now no problem to use.
+</h4>
+<img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/ssh-images-volumio2.jpg" alt="SSH Volumio 2" width="1856" height="696">
+<h3>Volumio 2 by ssh access on 15th Oct 2016</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Volumio2-back.jpg" alt="Volumio 2 " width="1300" height="731"></center>
+<h3>Back Images can replace any images   Volumio 2</h3> 
+<br>
+<h4> Still using Debian family Linux,but limited version.asignment of 
+memory is caluculated much better than before.but not detect USB HDD 
+Memory.
+<br>sound is not so good than before.I guess. on 15th Oct 2016. 
+</h4>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Remix-F21-mate.jpg" alt="Remix Fedora core 21 arm 2015 RP2" width="994" height="530"></center>
+<h3>Remix Fedora 21 ARM with Mate under Raspberry Pi 2 B type on 11st Mar 2015 </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/mate-raspberry2015.jpg" alt="Fedora Remix 21 for Raspberry pi 2" width="1255" height="667"></center>
+<h3>Fedora Core 21 Remix ,MATE for Raspberry PI2 on 12nd Mar 2015 with Cantata MPD</h3> 
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/cairodock-mateFC21Rem-raspberryP2.jpg" alt="MATE DC21 Remix Raspberry Pi2 2015 Mar" width="1255" height="667"></center>
+<h3>Fedora Core Remix 21 under Arm Raspberry Pi 2 .... on Mar 2015  MATE Cairo-dock</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/cantata-FC21-rasp.jpg" alt="FC21 Raspberry Pi +B 2 Mar 2015" width="1253" height="661"></center>
+<h3>Raspberry Pi 2 work-station FC21 Remix with Cantata indicated show Alubums from Volumio</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/FC21ewmix-icewm-Raspb-PI2.jpg" alt="ICEWM FC21 Remix Raspberry Pi2  2015 May" width="1255" height="667"></center>
+<h3>ICEWM under Fidora Remix 21 on 23rd May 2015 ,,more light weight window manager for Linux</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/FC21ewmix-icewm-Raspb-PI2-2.jpg" alt="ICEWM Raspberry Pi2 2015 May" width="1255" height="667"></center>
+<h3>ICEWM Fidora 21 Remix Raspberry Pi2  Armv7 +Cairo-dock much Better than Windows 10</h3>
+<br>
+<br>
+<br>
+<br>
+<h5>Small Chines DDC PCB using USB I2S DAC DIY</h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/USB-DAC-PCM5102a.jpg" alt="USB DAC I2S 2015 Mar 29" width="461" height="349"></center>
+<h3>Chinese small PCB DDC using USB I2S DAC </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Olasonic-D-96xd.jpg" alt="DigiFi15" width="461" height="343"></center>
+<br>
+<br>
+<br>
+<br>
+<center><a href="http://www.rs-components.com/index.html" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rs.png" alt="RS components" width="193" height="30"></a></center>
+<h3>Raspberry Pi 2 is can buy at RS compnents in your country</h3>
+<br>
+<br>
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" id="movie" width="320" height="230">
+	<param name="flashvars" value="fms_app=&amp;video_file=/2A3/fladance/movie/rasp-volumio1.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=">
+	<param name="allowfullscreen" value="false">
+	<param name="movie" value="/2A3/fladance/fladance.swf">
+	<embed src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/fladance.swf" name="movie" allowfullscreen="false" flashvars="fms_app=&amp;video_file=/2A3/fladance/movie/rasp-volumio1.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" width="520" height="230">
+</object></center><h3>Sound from Rasspberry Pi B+ PCM5102a from The Jazz Groove.com</h3>
+<br>
+<br><center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" id="movie" width="320" height="230">
+	<param name="flashvars" value="fms_app=&amp;video_file=/2A3/fladance/movie/300B-Volumio.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=">
+	<param name="allowfullscreen" value="false">
+	<param name="movie" value="/2A3/fladance/fladance.swf">
+	<embed src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/fladance.swf" name="movie" allowfullscreen="false" flashvars="fms_app=&amp;video_file=/2A3/fladance/movie/300B-Volumio.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" width="520" height="230">
+</object></center>
+<br><h3>Plays Jazz by Raspberry Pi B+ I2S PCM5102A DAC on 1st June 2015 from USB 1 Tera HDD</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Ubuntu-Mate-RP2.jpg" alt="Ubuntu-Mate for RP2" width="1074" height="577"></center>
+<h3>Ubuntu Mate Version for RP2 Expand micro USB to 32 G Byte,,　7th June 2015</h3>
+<br>
+<h4>N01 : in general using 16 G, 32 G byte micro SD memory but always 
+need memory .original partation is very small. fill up soon his micro SD
+ memory.
+<br>so expand up to 29 G byte. actually moved /usr and /var are moved 
+into other sector of memory. not difficult and this part can use as NAS 
+too.
+<br>
+<br>No2 :Formal way ：
+<br>choose to root ,by some terminal from comand line su or sudo then
+<br><font color="#ff0000">#fdisk /dev/mmcblk0</font>
+<br>then delete 2nd part of line like
+<br>Command (m for help): p 
+<br>
+<br>Device Boot      Start         End      Blocks   Id  System
+<br>/dev/mmcblk0p1            8192      122879       57344    c  W95 FAT32 (LBA)
+<br><font color="#ff0000">/dev/mmcblk0p2          122880     3788799     1832960   83  Linux</font>
+<br>delete red line then n for make one expand sector.
+<br>
+<br>Command (m for help):
+<br>Command (m for help): d
+<br>Partition number (1-4): 2 
+<br>
+<br>Command (m for help): n
+<br>Partition type:
+<br>p   primary (1 primary, 0 extended, 3 free)
+<br>e   extended
+<br>Select (default p): p
+<br>Partition number (1-4, default 2):
+<br>Using default value 2
+<br>First sector (2048-15351807, default 2048): 122880
+<br>Last sector, +sectors or +size{K,M,G} (122880-15351807, default 15351807):
+<br>Using default value 15351807
+<br>------------------------------------------------
+<br>each value is depend on case of memory.this case is 8 gByte of micro USB using.
+<br> 
+<br>Command (m for help): w
+<br>The partition table has been altered!
+<br>--------------------------------------------------------------------
+<br>Then ,,# reboot and check how to got partation .
+<br>very important comand is 
+<br><font color="#ff0000">#resize2fs /dev/mmcblk0p2</font>
+<br>above comand meke realize expand Partition of memory on maicro SD.
+<br>if choose final of sector ,,will be use unitl end of memory.if do 
+you have 32 G byte can be use until end of memory like 29G byte.
+<br>please try it's.good for you small your PC Raspberry Pi2 with 
+Linux.if does not get expand partition will you try to reboot then make
+<br>#resize2fs /dev/mmcblk0p2 again then reboot , check again with $ df 
+-h can to see partition. this way to expand partition use very carefully
+ to do.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/df-h.jpg" alt="DF-H" width="1213" height="462"></center>
+<h3>indicated by df -h and you can see already up to 29Gbye  </h3>
+<br>
+<h5>Easy Way to Expand ReSize Memory</h5>
+<br>
+<br>
+<h4>If are you using Fedora Core or Ubunti family(Debian),please try to install "gparted"
+<br>$ sudo apt-get install gparted  or $ sudo dnf install gparted 
+<br>then su or sudo 
+<br>start gparted
+<br>you can see "resize"  on /dev/mmcblk0p4 
+<br>moves resize to end of memory on  which means if are you using 32 G Micro SD, Linux OS using around 4 G Byte so still you have
+<br>28 G byte on Micro SD.end of memory is /dev/mmcblk0p4 as a "/ " so 
+this partation will be move to final of sector.untill 28 G byte.
+<br>then  
+<br>#resize2fs /dev/mmcblk0p4
+<br># reboot
+<br>you can get more memory on Raspberry Pi Linux OS.this is one case of
+ Fedora Core 25 on Raspberry Pi.any way easy to expand memory.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/gparted.jpg" alt="Gparted" width="1000" height="334"></center>
+<h3>Gparted ,easy to expand memory of Raspberry Pi Linux OS this is for Fedora Core 22 Linux</h3>
+<br>
+<br>
+<h4><font color="#ff0000">Now you can</font>use space of memory as NAS mount volumio menu which is libraly.
+<br>first must be edit /etc/samba/smb.conf  show next
+<br> 
+<br>[Share]
+<br>
+<br>  comment = Share
+<br>  path = /var/samba/share
+<br>  read only = no
+<br>  public = yes
+<br>  follow symlinks = yes
+<br>  wide links = yes
+<br>  
+<br>this parts are use as samba directly.after mounted as NAS and IP is same as Volumio's IP.
+<br>then you can use around 25 Gbyte as internal memory for keep Music.Volumio can see as NAS.it's enough Music server.
+<br>can keep around 500 music of flac.even a couple of DSD Native archive.how about ? I think good idea.!!!
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/kakutyo.jpg" alt="NAS" width="1043" height="560"></center>
+<h3>NAS inside of Volumio</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/BatMan-ICEWM-RP2.jpg" alt="ICEWM Rasp Pi2 under Mate" width="1276" height="688"></center>
+<h3>Ubutu Mate Ver ICEWM Batman theme</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/ubunt-mateRP2.jpg" alt="MATE UBUNTU RPI2" width="1271" height="655"></center>
+<h3>Ubuntu Mate Raspberry Pi 2 </h3>
+<br>
+<br>
+<h5>How to use flash movie in Ubuntu Mate with Raspberry Pi 2</h5>
+<br>
+<br>
+<h4>gnash can use instead of flash plugin with firefox when if using Raspberry Pi 2 with Ubuntu Mate.
+<br>just type 
+<br>$ sudo apt-get install gnash 
+<br>$ sudo apt-get install browser-plugin-gnash 
+<br>
+<br>then you can use flash movie on firefox.even you can install  adobe flash.so .
+<br>
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/marutu-arduino.jpg" alt="Marutu Arduino uno clone" width="624" height="351"></center>
+<h3>Small PC Arduino Testing</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/arduino-marutu.jpg" alt="Arduino Uno " width="1161" height="839"></center>
+<h3>What can I do ?　2016,11st Nov</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/arduino-processing1.jpg" alt="oscilo scope" width="1065" height="799"></center>
+<h3>でProcessing on Linux Osciloscope Poor Man Oscilo</h3>
+<h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/kyutec-arduino.jpg" alt="Arduino osilo " width="1000" height="563"></center>
+</h4><h3>Oscilo Scope by Arduino </h3>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/lxardoscope.jpg" alt="Lxardoscope on Linux" width="998" height="768"></center>
+<h3>Lxardoscope Linux by Arduino</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/visual-Analyer.jpg" alt="Visual Analyser 1.8" width="1000" height="563"></center>
+<h4>But this one is Best for Windows.
+<br><a href="http://visual-analyser.software.informer.com/8.1/" target="links">--Visual Analyser 8.1 down load--</a>
+<br>if would like to install and if do you have windows PC please try to install good for workshop and hobby.</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/va-wine.jpg" alt="VA  wine " width="1200" height="582"></center>
+<h3>Visual Analyser under Wine Linux Fedora Core 22 x86 64bit</h3>
+<br>
+<br>
+<h10>Many my friends using and recommend to use and easy to get sound.<a href="https://www.hifiberry.com/2015/09/new-product-releases-hifiberry-dac-light-and-dac-pro/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/hifiberry.jpg" alt="HifiBerry " width="150" height="41"></a>
+<br><a href="http://single-ended.com/rasp/hifiberry-pro.zip">Schematic diagram of Hifiberry pro</a>
+<br><h4>my friend said get good sound from Hifiberry Pro,so recommend to
+ use ,,,,actually this DAC use as I2S and I2C control.2 xtals for master
+ clock</h4>
+<br>
+<br>
+<br>
+<h10>and ,,,You can get sound of DSD by kit with Raspberry Pi<a href="http://www.diyinhk.com/shop/audio-kits/60-usb-dsd-dxd-384khz-dac-with-bit-perfect-volume-control-and-spdif-inputxmoses9018k2m.html" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/hkdiy.jpg" alt="DIYINHK DAC KIT" width="111" height="22"></a>
+<br><h4>They has many kit's for Digital Audio</h4>
+<br>
+<img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/raspberryPi_logo.gif" alt="raspberryP" width="70" height="90"><h10>Raspberry Scematic diagram</h10>
+<br>
+<h10>Circuit diagram <a href="https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/README.md" target="links">all shematic diaram is here/Raspberry Pi 1-3</a></h10>
+<br>
+<br>
+<h10>Circuit diagram of Raspberry Pi family<a href="http://single-ended.com/rasp/archive/rasp-sche.tar.bz2">---Schematic Diagram---</a></h10>
+<br>
+<br>
+<h10><a href="http://single-ended.com/rasp/archive/volumio.pdf" target="links">Manual for Volumio</a>Courtesy of Mr Michelangelo Guarise on 11st Oct 2016 </h10>
+<br>
+<br>
+<h10>Switch Science Japan/Takajin DAC<a href="https://international.switch-science.com/catalog/2118/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/sws.png" alt="Switch Science Japan" width="337" height="36"></a></h10>
+<br>
+<br>
+<h10>Idea of DAC for Raspberry Pi<a href="http://www.pavouk.org/en_index.html" target="links">DIY Site from PAVOUK</a></h10>
+<br>
+<br>
+<h10><a href="http://www.dddac.de/start.html" target="links">DAC DIY Site</a>WWW.DDDAC.COM</h10>
+<br>
+<br>
+<h10><a href="http://www.tjaekel.com/T-DAC/index.html" target="links">Raspberry Pi DAC A to Z TJAEKL.COM</a></h10>
+<br>
+<br>
+<h10><a href="http://www.geocities.jp/onsei2007/kousaku/PI_I2S_DAC.html" target="links"> isi's hobby site (Only Japanese)</a></h10>
+<br>
+<br>
+<h10><a href="http://www.single-ended.com/2A3/archive/allmysite-log.xls">My Site Access in a day</a></h10>
+<br>
+<br>
+<h10><a href="http://easyaudiokit.hobby-web.net/bekkan/distr/distr.html" target="links">Easy Audio Kit Japan(only Japanese)</a></h10>
+<br>
+<br>
+<h10><a href="http://www.2l.no/hires/index.html" target="links">High Soulution Sound Sample</a>for Down Load from 2L </h10>
+<br>
+<br>
+<h10><a href="http://dsdmaster.blogspot.jp/p/blog-page.html" target="links">Free DSD sample down load from dsdmaster.blogspot.jp</a></h10>
+<br>
+<br>
+<h10><a href="http://makezine.jp/blog/category/electronics" target="links">Make---<img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/makezine.jpg" alt="Make " width="261" height="78"></a></h10>
+<br>
+<br>
+<h10><a href="http://apc.io/" target="links">Other side of Arm PC....call it's APC Paper</a></h10>
+<br>
+<br>
+<h10><a href="http://www.hifistatement.net/index.php/download" target="links">Hifi Statements Net Free Down Load DSF</a></h10>
+<br>
+<br>
+<h10><a href="http://single-ended.com/dac-valve.htm" target="links">6DJ8 SRPP DAC DIY</a></h10>
+<br>
+<br>
+<h10><a href="https://launchpad.net/soundconverter/trunk/2.1.5" target="links">Sound converter Linux and Can do re-sampling 32bit</a></h10>
+<br>
+<br>
+<h10><a href="http://madcalfapps.blogspot.jp/2012/03/jazz-radio-stations.html" target="links">Internet Jazz links</a></h10>
+<br>
+<br>
+<h10><a href="http://www.pimusicbox.com/" target="links">Pi π Music Box</a></h10>
+<br>
+<br>
+<h10><a href="https://www.mopidy.com/" target="links">MOPDIY</a></h10>
+<br>
+<br>
+<h10><a href="http://single-ended.com/archive/Raspberry-Pi-R2.pdf" target="links">Raspberrry Pi R2 Scematic Diagram</a></h10>
+<br>
+<br>
+<h10><a href="http://www.listenlive.eu/index.html" target="links">from Eurpa www.listenlive  get pls file </a></h10>
+<br>
+<br>
+<h10><a href="http://www.shoutcast.com/" target="links">from USA Shout Cast to get pls file </a></h10>
+<br>
+<br>
+<h10><a href="https://www.internet-radio.com/" target="links">Internet Radio.com to get pls filesト</a></h10>
+<br>
+<br>
+<h10><a href="http://www.181.fm/?p=mp3links" target="links">181 FM </a></h10>
+<br>
+<br>
+<h10><a href="http://www.radiofeeds.co.uk/mp3.asp" target="links">UK Radio Station WebCast</a></h10>
+<br>
+<br>
+<h10><a href="http://noteasy2.kmdns.net/wordpress/" target="links">Raspberry Pi Zero and  other tip from HongKong</a></h10>
+<br>
+<br>
+<h4>if did you find xxx.pls then copy and drug into some directly of rasbberry pi on Micro SD memory or same folder of
+<br>Ramplay .you can add special web-radio and  then can be use as web radio. </h4>
+<br>
+<h5> 3 of List of WEB Radio Stations for High bit rate</h5>
+<br>
+<br>
+<h10><a href="http://www.goodwinshighend.com/radio/internet_radio.htm" target="links">High End Audio Internet List</a></h10>
+<br>
+<br>
+<h10><a href="http://www.radionomy.com/" target="links">More than 1000 WEBRadio can you add in your Volumio.from radionomy.com and AbaucasFM</a>Best Good Site</h10>
+<br>
+<br>
+<h10><a href="http://redmp3.co/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/RedMP3.jpg" alt="RedMP3" width="110" height="15">Free Music MP3 down load / any kind of Music enjoy!!! </a></h10>
+<br><h4>sometimes change domain please watch on net</h4>
+<br>
+<h4>Sound quality is very good and very clear.I recommend to add your webradio of Volumio other Music server(Raspberry Pi family)</h4>
+<br>
+<h4>
+<br>And to get more High Bit Rate Stations data for Volumio.</h4>
+<br>
+<h10>HibitRate Stations from<a href="http://radiobit.50webs.com/" target="links">radiobit.50webs.Com </a></h10>
+<br>
+<br>
+<h10>Get Good Sound from BSO<a href="https://www.bso.org/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/BSO.jpg" alt="BSO Boston Sympjony Orchestra" width="129" height="101"></a></h10>
+<h4># wget http://www.single-ended.com/rasp/archive/WGBH-BSO.tar.gz
+<br>can get sound from Volumio ,only Classic 24bit 48Khz sound from them
+</h4>
+<center><a href="http://123movies.to/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/123movie-to.jpg" alt="Free Cine and TV" width="222" height="73"></a></center>
+<h3>Free Cine and TV Dramas if do you have good line for Internet</h3>
+<br>
+<br>
+<h4>My System : 300B Single Ended Amplifier and 2A3 Single Ended 
+Amplifier. valve Pre RIAA  for SL1200 ,CD Player was broken last 
+year(2014.Dic)
+<br>Speaker is 91dB Vertical Twin,DAC is 6DJ8 Valve FN1242A DAC 
+connected SPDIF with USB Interface 24bit and Raspberry pi B+ PCM5102a 
+I2S DAC.
+<br>and Pioneer DAT D-06.Main PC is Fedora Core 18 Linux(Vaio VPCJ2)for work station. 2 of Linux file server using old PC.
+<br>High Res source means ,,you have to use Valve Single Ended Amplifier
+ because almost good semiconductor amplifier's frequnecy response are
+<br>10Hz to 20Khz (nominal 30Khz ) how can you listen music high reso 
+music from SS Amplifier.valve single ended amplifier made reproduce 
+until 100Khz.
+<br>or more high frequency.how about ?   
+</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/my-amp.jpg" alt="my amp 2015" width="646" height="484"></center>
+<h3>my amplifier's for Music </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/back-side71A.jpg" alt="Raspberry Pi DAC Amplifier" width="743" height="502"></center>
+<h3>USB DAC input(71A Single Ended Amplifier),96Khz 24Bit DAC inside</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/icewm-2015.jpg" alt="Main PC " width="1343" height="755"></center>
+<h3>My Main PC Fedora Core 18 Linux under ICEWM with Vaio Intel inside on July 2015</h3>
+<br>
+<h5>DSD(DSF) from PCM 　：TASCAM Free Application using for get DSD file</h5><h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Tascam-editor.jpg" alt="Using TASCAM free application very nice " width="1344" height="756"></center>
+</h5><h3>TASCAM free application using for convert sound wav to DSF this one using under wine Linux </h3>
+<br>
+<h4><a href="http://tascam.com/product/hi-res_editor" target="links">TASCAM Free Sound Editor</a>for PCM to DSD ,,,,
+<br>and easy to install your PC even using Linux ,can be install by wine, nothing problem. very good one for you.
+<br>this application contain wasapi so need addtional farm ware. please try to seek asio ,can be use asio4all for ASIO.
+<br>for convert PCM to DSF.any way you can listening music PCM sound directly from DSD source with DoO.
+<br>one thing you can play until 2.8 Mhz DSF from CD Wav --&gt;&gt; 
+Convert --&gt;&gt; DSF into Raspberry PiB+ then I2S DAC (PCM5102A).
+<br>for first step you have try to use ripping which using some kind of ripper and save as WAV file then convert DSF file. 
+<br>if do you have Native DSD DAC much better.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/wine-playonlinux-office2010.jpg" alt="Wine + x86 64bit Linux play Windows" width="1300" height="731"></center>
+<h3>MS Applications on Native x86 64bit FC22 Linux (Sony Vaio)</h3>
+<h4> If you have Intel PC ,you can install Linux and same way you can 
+use Windows Applications on Linux under Wine Linux.if Raspberry Pi 2 can
+ do x86 Linux
+<br>easy to install Wine and play windows applications.I am using Linux 
+more than 10 years, nothing problem with wine.if you can use wine by 
+Raspberry Pi 2
+<br>off course you can use Windows XP's applications.only x86 Linux can do.
+<br></h4>
+<br><h4><font color="#ff0000">Note: PCM5102A I2S DAC does not get 24bit automatically.</font>16bit 384Khz PCM either indicated DSD or 24bit on Volumio but actually 16bit high samplinng frequency sound.
+<br>Still are you ,would like to use Raspberry Pi Music Server I2S 
+.please use ES9018 family DAC and ES9023 DAC can do DSD &gt;&gt; DoP 
+&gt;&gt;PCM ,24bit high sampling frequency
+<br>sound.with I2S. 
+<br>
+<br>root@volumio2:~# cat /proc/asound/card0/pcm0p/sub0/hw_params
+<br>access: RW_INTERLEAVED
+<br>format: S16_LE
+<br>subformat: STD
+<br>channels: 2
+<br>rate: 44100 (44100/1)
+<br>period_size: 4410
+<br>buffer_size: 22050
+<br>24,32bit sound with I2S does not play as correct format by Raspberry Pi I2S DAC. 
+<br>
+<br>What do you think ? Raspberry Pi I2S DAC and Raspberry Pi is kind of Toy ?
+<br>please see<a href="https://volumio.org/forum/need-know-can-rpi-can-output-real-bit-t2521.html" target="links">see problem</a>
+<br>so Toy is Toy ?still Toy.　Dop Playback from USB memory has problem 
+,getting noise etc but same source from USB HDD can play with Dop play.
+<br>if would like to play Music please try to use USB HDD memory.HDD means Hard Disc Drive,SATA with USB adapter.
+</h4>
+<br>
+<br>
+<h5>any way Sound is good </h5>
+<br><center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" id="movie" width="320" height="230">
+	<param name="flashvars" value="fms_app=&amp;video_file=/2A3/fladance/movie/volumio155mpd.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=">
+	<param name="allowfullscreen" value="false">
+	<param name="movie" value="/2A3/fladance/fladance.swf">
+	<embed src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/fladance.swf" name="movie" allowfullscreen="false" flashvars="fms_app=&amp;video_file=/2A3/fladance/movie/volumio155mpd.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" width="520" height="230">
+</object></center>
+<h3>EH 300B Single Ended Amplifier SPL 91dB/m/w (using fladance mp player)sound from Raspberry Pi B+ I2S </h3>
+<h3>32bit 96Khz up sampling by sound-converter Linux PCM WAV file</h3>
+<br><h3>Song by Linda Ronstadt</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/lindaR.jpg" alt="Cantata indicated" width="1332" height="746"></center>
+<h3>shown by Cantata on Fedora Core Linux 22 x86 Vaio</h3>
+<br>
+<br>
+<h5>Testing New 300B Amplifier on 2016 May 1st</h5>
+<br>
+<br><center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" id="movie" width="320" height="230">
+	<param name="flashvars" value="fms_app=&amp;video_file=/2A3/fladance/movie/300B-2016Test.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=">
+	<param name="allowfullscreen" value="false">
+	<param name="movie" value="/2A3/fladance/fladance.swf">
+	<embed src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/fladance.swf" name="movie" allowfullscreen="false" flashvars="fms_app=&amp;video_file=/2A3/fladance/movie/300B-2016Test.mp4&amp;image_file=&amp;link_url=&amp;autoplay=false&amp;mute=false&amp;vol=0.5&amp;controllbar=true&amp;buffertime=" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" width="520" height="230">
+</object></center>
+<h3>Very modern sounding from Raspberry Pi B+ I2S DAC </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Testing300B.jpg" alt="Testing.. 300B Amplifier Apr 2016" width="709" height="489"></center>
+<h3>Testing new 300B Single Ended Amplifier on Apr 2016</h3>
+<br>
+<br>
+<h5>This is not Raspberry Pi B+ ,,Main PC is Vaio with Fedora Core 22 </h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/FC22-Vaio-Wbar2015.jpg" alt="ICEWM + Emiclock Fedora Core 22 2015" width="1334" height="750"></center>
+<h3>Fedora Core 22 and emiclock,Wbar with Sony Vaio 2015 ,I'm using for ripping sound from CD</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/LinnJazz-Raspberrypi.jpg" alt="Linn Jazz " width="1344" height="756"></center>
+<h3>Linn Jazz watch by Cantata FC22 Linux</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/cantata-volumio-rasp.jpg" alt="Cantata can do anything from terminal" width="1000" height="562"></center>
+<h3>Cantata Can do control volumio server directly, even can play any Internet Radio</h3>
+<br>
+<br>
+<h5>HeadPhone Amplifier with Raspberry Pi</h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102-Rasp-headphone-amp.png" alt="head phone amplifier 2016 1st May" width="800" height="600"></center>
+<br><h3>Just show you schematic diagram for Head phone Amplifier on 1st May 2016<a href="http://single-ended.com/rasp/archive/MUSES8832_E.pdf" target="links">MUSES8832.pdf</a></h3>
+<h4>As you know,Raspberry Pi +B family has -3V negative voltages. so you
+ can play with OP amp IC's .like MUSES8832 .this kind of OP IC
+<br>works from 1.75 V to 14V power supply.not too much enough but can be
+ use negative voltages from Raspberry Pi.how about ? I will try to
+<br>test as soon as possible....may be within one month ......</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/headphone1.jpg" alt="components" width="593" height="331"></center>
+<h3>just all of component are above,and add few CR too</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/headphone2.jpg" alt="head phone amp" width="452" height="327"></center>
+<h3>show small headphone amp for Raspberry Pi I2S </h3>
+<h4>This time use internal power supply of +3.2V and -3.2V from Raspberry Pi B+ at PCM5102A or PCM51XX family DAC. .
+<br>if possible to get +7V and -7V power supply.	much better to get good sound.
+<br>but if can you get LTC1144C switched capacitor IC can get +5V and -5V power supply from internal Raspberry Pi B+ from USB +5V.
+<br>if would like to use Negative Voltage at pin 5 of PCM5102A ,please use BP (bipolar capacitor nichicon BP etc)but often use 
+<br>2 capacitor connected series one of up side down like figure.2 of 100uF 16V = 50uF 32V instead of one BP. why ?
+<br>when out of lock music .pin5 will be get 3.2V then changes to -3.2V when came signal from server. so need BP capacitor.
+<br>make sure ..please BP capacitor for safe.
+<br>finally use as buffer for Headphone amplifier.but effect is very 
+much great.circuit is very simple and getting good sound from hiend 
+headphone.
+<br><font color="#ff0000">Even</font>budget headphone singing very nice from this part.this buffer for high impedance to low for Headphone impedance.
+<br>and you can use any OP IC.if does not have same IC,you can use any 
+IC like 4580 etc but no connected negative power supply just connected 
+ground pin 4
+<br>OP IC.if can you get same audio buffer MUSES8832 can connected with Negative voltages.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DCdc.jpg" alt="DC/DC converter" width="390" height="216"></center>
+<h3>If would like to get more dinamic range must be use DC/DC converter like above MCW03-12D15</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102A-RPBHeadphone.png" alt="Raspberry Pi B+ HeadPhone Amp" width="800" height="600"></center>
+<h3>This is up date circuit for Raspberry Pi Headphone Amplifier on 10th June 2016</h3>
+<br>
+<h4>It's enough to use as a Music Server RPi B+ and PCM5102A I2S DIY DAC and DSD,DSF by DoP and any PCM sound
+<br>If would like to use DSF file must be get data  from HDD(SATA) from USB PORT.to get  very much fun, Can play anything.</h4>
+<h5>And Extarnal USB--SPDIF--Home Made DAC</h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DAC-va3.jpg" alt="DAC DIY" width="524" height="634"></center>
+<h3>My DAC on Nov 2009 Using FN1242A 24bit 198 Khz DAC</h3>
+<h10><a href="http://single-ended.com/dac-valve.htm" target="links">6DJ8 /FN1242A DAC DIY	</a></h10>
+<br>
+<h4>I am using external DAC with the other Raspberry Pi connected USB/SPDIF converter(made in china)to DAC show above photo.
+<br>this DAC is using FN1242A DAC 24bit 198Khz fuluency DAC but DAC Chip is dicontinous model so can not get any more now.
+<br>but you can use any kind of DAC chip like PCM1794 ,etc.build up no difficults and easy to get good sound.
+<br>first thing is find good and cheap "USB &gt;&gt; SPDIF converter" SEC is 24bit 32bit at least 198 Khz Sampling Frequency.
+</h4>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/cantata-mpd.jpg" alt="Cantata MPD" width="1300" height="731"></center>
+<h3>Ripping(recoding) sound stream by command line on terminal</h3>
+<br>
+<h4>
+<br>After almost one year,I am using Volumio 1.55 ,very enjoy Music from Volumio 1.55, but I did try to update and upgrade by ssh.
+<br>I thought,memory has 56% of total memory of root.as 
+<br>$ df -k 
+<br>0 % memory so nothing to do.what's happen ,
+<br>I have to install Volumio 1.55 again. please do not make easy to thinking " update or upgrade " after one year use.
+<br>Volumio 1.55 is best than Volumio 2 .because Volumio 2 does not play DSF DSD file. still not on 16th Oct 2016.
+<br>and Client MPD does not have volumu control.so from Cliant MPD can not control sound.how about ?? :)Volumio 2 is unstable.
+<br>WEBRADIO is not listed in Volumio 2. get from http://api.dirble.com/
+ ~ so if does not connected Internet can not get any Radio Station.
+<br>this is not kind of Linux Debian.is small version of 
+Linux.　Volumio　2 .have to use Pi3.prpbably.....I have 3 of these RP so 
+can not buy
+<br>any more.some day will buy Edison x86 or may be RP 3.some day...
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-kj.jpg" alt="Volumio2  piB+ " width="1200" height="675"></center>
+<h3>Play mp3 with Good sound by Volumio2 </h3>
+<br>
+<br>
+<h5>Raspberry Pi with Linux Light  Window Manager:  Best one is ICEWM </h5>
+<br>
+<h4>If are you using Fedora Core, Ubuntu ,Debian Linux any Linux distribution can be use light weight Window Manager and
+<br>Most best one is ICEWM as you know.this Window Manager works background of gnome, Mate ,KDE etc but they are very heavy
+<br>so difficult work with Arm processor.ICEWM is very light weight.show next images just like Vista ,XP, more than 100 face has.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/icewn-batman.jpg" alt="ICEWM RP2" width="1200" height="647"></center>
+<h3>ICEWM RP2 </h3>
+<br>
+<h4>Archives is here of Themes, so $ wget http://www.single-ended.com/rasp/archive/themes.tar.gz
+<br>you can get more than 100 themes of ICEWM ,
+<br>cd tmp then 
+<br>$ wget http://www.single-ended.com/rasp/archive/themes.tar.gz
+<br>
+<br>icewm can get 
+<br>$ sudo apt-get install icewm
+<br>$ sudo apt-get install icewm-devel
+<br>when you are using Ubuntu/Debian family OS. and if using Fedora Core family  
+<br># dnf install icewm  
+<br>if you can get ICEWM window manager please try to install ICEWM themes into your home directly.
+<br>cd $ tmp
+<br>tar xvzf themes.tar.gz -C /home/papagayo/.icewm 
+<br>papagayo is depend on user directly.if your name is bob may be /home/bob/.icewm
+<br>if User Name is pi ,/home/pi/.icewm  so on .
+<br>then you can get useful "ICEWM" .ICEWM is most light weight Window Manager for Linux.
+<br>please try.  
+</h4>
+<h5>ICEWM screeshot more than 200 themes and depend on your skill</h5>
+<h4>easy to edit ~.icewm of home directly
+<br>$ cd /usr/share/icewm
+<br>/user/share/icewm $ ls 
+<br>show all files at icewm directly. 
+<br>indicated all files so all files must be copy into ~.icewm/ at your home directly
+<br>then $ ls 
+<br>$ icons  ledclock  menu  startup  theme   toolbar keys   mailbox   preferences  taskbar  themes  winoptions
+<br>if start up ICEWM at home directly automatically made .icewm 
+<br>this is only empty directly so above files copy into .icewm
+<br>then you can use many of themes of ICEWM . so show you some of themes exsample next.any one can do ICEWM and very light weight.
+<br>if does not have .icewm please make directly 
+<br>$ mkdir .icewm 
+<br>almost set up ICEWM is preferences and menu files must edit.using nano, emacs ,gedit etc etc.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/708090.jpg" alt="708090 theme" width="854" height="466"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/XP-icewm.jpg" alt="Like XP" width="857" height="523"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/icebox.jpg" alt="ICEBOX" width="734" height="461"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/icewm-icenine.jpg" alt="icenine" width="1000" height="539"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/mac-os-icewm.jpg" alt="Like MaC OS" width="861" height="465"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/ocewm-icenine.jpg" alt="icenine" width="873" height="467"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/vista-icewm.jpg" alt="Vista" width="860" height="465"></center>
+<h3>More than 200 thems on your RP2 by ICEWM</h3>
+<br><h4>If would like to indicate fancy clock please try to install cairo-dock and cairo-clock . like next Ubuntu can easy to install.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/besame.jpg" alt="Cairo Clock under Ubuntu RP2" width="1300" height="693"></center>
+<h3>ICEWM themes Naru with Cairo Clock RPi2</h3>  
+<br>
+<br>
+<h5>MC install Mid Night commander </h5>
+<br>
+<h4>This is one of viewer for Linux without X terminal.so helpful for 
+move inside of Linux command line. Linux user knows ,very antic viewer.
+<br># apt-get install mc or $ sudo apt-get install mc 
+<br>if your Linux terminal has good enough of memory. please install emacs.
+<br>for edit any file.much better than Vim Vim nano etc.
+<br>$ sudo apt-get install emacs    or  # apt-get install emacs
+<br>this time using nano for editor inside of Volumio.show next figure.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/mc.jpg" alt="Mid Night commander " width="700" height="501"></center>
+<h3>Mid Night Commander for Volumio 1.55 even Volumio 2 by ssh</h3>
+<br>
+<h5>One month ago I moved my old apartment to old apartment but IPv6 </h5>
+<br>
+<h4>first day I hooked up my Volumio to Opctic modem IPv6 and Ipv4 both 
+modem.but I could not see share directly from other PC Linux.
+<br>I did many thing,, but nothing to make . only one thing Volumio2 can
+ accept Samba Share. Volumio2 is something different than Volumio 1.55
+<br>now samba not use "Share" of word.one was problem is do not use "Share".
+<br>so idea get  smb.conf from my Main Linux work Station.just some copy of them.
+<br>root@volumio-org:~# cat /etc/samba/smb.conf
+<br>#======================= Global Settings =======================
+<br>
+<br>[global]
+<br>
+<br>#  netbios name = Volumio
+<br>  workgroup = WORKGROUP
+<br>  server string = Volumio Audio Player
+<br>  dns proxy = no
+<br>  log level = 0
+<br>  syslog = 0
+<br>
+<br>  security = user
+<br>  passdb backend = tdbsam
+<br>  guest account = root
+<br>  #map to guest = bad user
+<br>  #map untrusted to domain = yes
+<br>  load printers = no
+<br>  domain master = no
+<br>  local master = no
+<br>  preferred master = no
+<br>  
+<br>
+<br>#======================= Share Definitions =======================
+<br>
+<br>   directory mask = 0777
+<br>   create mask = 0777
+<br>then from here are same as Volumio. finally I got fine now.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/samba-volumio.jpg" alt="samba conf volumio" width="1000" height="427"></center>
+<h3>right now I can see Share directly at Volumio 1.55:) </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/dsd-playAudacious.jpg" alt="DSD Plays by Audacious FC 22 Linux" width="1400" height="483"></center>
+<h3>Play DSD by Audicious FC 22 Linux x86 64bit Music Server is Volumio 1.55</h3>
+<br>
+<br>
+<center><iframe src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/FquK60XvOPQ.htm" allowfullscreen="" width="512" height="288" frameborder="0"></iframe></center>
+<h3>Play Diana K by Raspberry Pi B+ and Volumio 1.55 ,DAC is I2S PCM5102A and 300B Single Ended Amplifier by Lagarto</h3>
+<h3>DSF 2.8 Mhz into Dop (PCM)</h3>
+<br>
+<br><h4>Note :Finally does not work Volumio 2 issue 12.12 version under Raspberry Pi+B.
+<br>if would like to interesting on my WEBRADIO please try to install.
+<br>$ cd tmp
+<br>$ wget http://www.single-ended.com/rasp/archive/Volumio155-webradio.tar.gz 
+<br>$ sudo tar xvzf Volumio155-webradio.tar.gz -C /var/lib/mpd/music/WEBRADIO
+<br>but if are you using Volumio 1.55 more than 3000 WEB Radios Stations
+  listed will be get but.make sure if does not work is not my problem.
+<br>just try to down load list then copy to WEBRADO directly.much better. Have a enjoy Raspberry Pi Music Server.
+<br>actually working 4 Pi for Music at home.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/icewm-naru.jpg" alt="ICEWM Ubuntu 16.10  2017 Jan" width="1200" height="637"></center>
+<h3>Raspberry Pi 3 with Ubuntu 16.04 ICEWM version 1st Jan 2017..very light WM</h3>
+<br>
+<br>
+<h5>Raspberry pi3 Ubuntu 16.04 TLS and ICEWM　 </h5>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/icewm-cairo.jpg" alt="ICEWM Cairo　on 15th Jan 2017" width="1300" height="701"></center>
+<h3>ICEWM Raspberry Pi 3 Ubuntu Mate 16.04 tls under ICEWM + Cairo </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/samba-rp3.jpg" alt="Rasp pi3 with samba ,Ubuntu 16.04 " width="1200" height="259"></center>
+<h3>Raspberry Pi3 with Samba /Ubuntu Mate 16.04 on Rapberry Pi3 and FC 22 x86 Linux</h3>
+<br>
+<h4>If do you have some problem with samba under Ubuntu 16.04 
+<br>please install $ sudo apt-get install  system-config-samba
+<br>so easy to configure and quickly edit file because this tool can find error part of smb.conf   
+<br>then make enter 
+<br> $system-config-samba
+<br>will be get some error. if did you get please make 
+<br># touch /etc/libuser.conf     then # system-config-samba  you can get gui window for samba configue
+<br><a href="http://single-ended.com/rasp/archive/smb.conf" target="links">my smb.conf</a>of Raspberry pi 3 with Ubuntu Mate samba.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/batman-icewm-pi3.jpg" alt="ICEWM batman Raspberry Pi 3 samba" width="1300" height="701"></center>
+<h3>samba under Raspberry Pi 3 Ubuntu Mate 16.04 with ICEWM Batman themes micro SD is Class10 </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/I2S-again.jpg" alt="2017 ,,,doing I2S again 3rd Jan 2017" width="550" height="416"></center>
+<h3>I2S for Raspberry Pi 2 and B+ on 3rd Jan 2017 making other one for Test</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/basic-I2S.jpg" alt="Basic I2S DAC" width="1008" height="860"></center>
+<h3>Just need these  component ,may be can buy local shop.but suppose be by KIT much better? or not</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM5102A-I2Sdac.jpg" alt="I2S DAC" width="1026" height="829"></center>
+<h3>super easy.. DIY I2S DAC- </h3>
+<br>
+<h4>So ,,, Have to use more small component, does not need big capacitor too, 4 resistance 5 small capacitior enough !!!
+<br>good job of Volumio 2 with Raspberry Pi 2 even Pi 3 too.sound is 
+good USB and I2S DAC.and can use Raspberry Pi3 Ununtu Mate 16.04 TLS.
+<br>as NAS.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/newDacI2S.jpg" alt="new I2S DAC inside simple" width="897" height="713"></center>
+<h3>small RC have to use and not necessary to use high grade component.</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/newI2SDAC2017.jpg" alt="Using DAC" width="800" height="548"></center>
+<h3>Volumio2 and Raspberry Pi2 I2S DAC inside on Jan 2017</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-I2S-DAC.jpg" alt="I2S DAC on 2017" width="800" height="592"></center>
+<h3>working I2S DAC inside is RASP Pi3 in small aluminum box by Takachi box</h3>
+<br><h4>
+<br>please see this site and you can get any kind of good termination of BOX.
+<br>Takachi BOX (Takachi Electronic Industrial Co.Ltd)</h4><a href="http://www.takachi-enclosure.com/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/head_takachi2.gif" alt="" width="167" height="60"></a><h4><a href="http://www.takachi-enclosure.com/" target="links">-Special BOX-</a>
+<br>for Electronics.</h4>
+<br>
+<h4> Still does not work good Volumio2 ,,,, on 22nd Jan 2017,"Raspberry 
+Pi F" why does not use x86 version ? Arm processor has limited.must be 
+use Intel x86.
+<br><font color="#ff0000">But do you have old MAC or PC are x86</font>can be use as Raspberry Pi but x86 ,even may be use with Volumio2.
+<br><a href="https://www.raspberrypi.org/blog/pixel-pc-mac/" target="links">Here to go "PIXEL for PC and Mac"</a>Make me a happy.I guess...
+<br>all of intel PC chip has 「PAE and Anti PAE 」so all of old PC does 
+not install this archive please seek by google " PAE and Anti PAE PC" 
+<br>if your old PC has XP ,may be you can use but windows 98 ,95 does not work depend on architecture of Intel
+<br>Until Raspberry Pi3 ,,,still Kind of Toy. must be make Raspberry Pi 4 x 86. No more Arm Processor. 
+<br>We are waiting x86 Raspberry Pi . May be Raspberry Pi 4 is x86 ???????? 
+</h4>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/inside-yaha.jpg" alt="inside of  DAC Yaha" width="535" height="406"></center>
+<h3>DAC Yaha inside</h3>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/yaha-digital2017.jpg" alt="Yaha Digital Jan 2017" width="576" height="434"></center>
+<h3>16bit DAC with Yaha AMP on 22nd Jan 2017<a href="http://single-ended.com/Lagarto/Yaha-lag.htm"> Yaha Amp by only Japanese</a></h3>
+<br>
+<br>
+<h5>Raspberry Pi 2 + Volumio2 under Testing (doing Play by Yaha DAC)　</h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/now-playwithvolumio2.jpg" alt="play with Volumio2 Raspberry pi2 " width="1000" height="741"></center>
+<h3>Play Volumio2 + Raspberry Pi 2</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-aitendo-dac.jpg" alt="Volumio2 " width="1000" height="463"></center>
+<h3>Aitendo USB cheap 16bit DAC with Volumio2</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-config-aitendo.jpg" alt="volumio2 configure" width="1000" height="690"></center>
+<h3>volumio2 + cheap DAC 16bit by Tube headphone Amplifier </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Raspi3-UbuntuMate-audacious.jpg" alt="Raspi 3 + Ubuntu 16.02 " width="1000" height="540"></center>
+<h3>Sound getting from Raspberry Pi B+ and Pi3(for monitor and Audacious ) ,4 Raspberry pi using</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Rasp3is64bit.jpg" alt="RP3 is 64 bit machine as you know" width="957" height="575">
+<h3>Raspberry Pi 3 is x11 64 bit Machine as you know ..Open SUSE on 8th Feb 2017</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/opensuse64bit.jpg" alt="OpenSuse 64bit Rasp3 Feb 2017" width="1000" height="563"></center>
+<h3>64 bit Arm OS OpenSuse under ICEWM on 10th Feb 2017 using 64 G Byte microSD</h3>
+<br>
+<h4>Just any kind of OpenSuse Arm 64 are not useble for WorkStation because kind of archive of Server.nothing to do.
+<br>even can not login user.and repository is old so can not install applications for general Linux such as Fedora and Ubuntu.
+<br>these are kind of Arch64 Linux.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/icewmbyUbuntu.jpg" alt="icewm Ubuntu 16.02 Volumio x 3" width="1255" height="678"></center>
+<h3>Volumio x3 are working as  Music server and Monitor is RPi3 </h3>
+<br>
+<br>
+<h4>This is one mention from Internet ."Arm processor major supported by Intel and Texsas Instrument as you know ?...." 
+</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/network-myroom.jpg" alt="" width="1347" height="1002"></center>
+<h3>At my room ,network 4 raspberry pi for Audio,3 for Volumio and Ubuntu pi3 monitor, Work Station x86 64bit Vaio</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/my-network2017.png" alt="network at my room" width="1000" height="600"></center>
+<h3>Network at my room on 2017</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DianaK-DSF.jpg" alt="Raspberry pi 2 with USB DAC" width="1200" height="673"></center>
+<h3>Volumio2 and RPi 2 + USB DDC + Home Made DAC FN1242A double DAC play DSF to DoP </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/invader-clone.jpg" alt="you can play by Ubuntu Pi" width="617" height="388"></center>
+<h3>$ sudo apt-get install invader-clone  Can play Invader much fun !!!</h3>
+<br>
+<br>
+<h4>Very interesting build up Head phone amplifier by using Pi Zero -W .
+ if I get Pi Zero -W as soon as possible if I have spare time.!!!
+</h4>
+<br>
+<br>
+<script type="text/javascript" src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/8.js" async="async"></script>
+<h3>Start on 4th Mar 2017</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Cocoliso-300Bdec2016.jpg" alt="" width="1137" height="740"></center>
+<h3>300B Single Ended Amplifier for Raspberry pi I2S DAC Sound Test</h3>
+<br>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/audacity-pi3.jpg" alt="Audacity rec " width="815" height="562"></h3>
+<h3>Raspberry pi3 tip by Ubuntu,doing REC from DAT </h3>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DSF2-8.jpg" alt="Play DSF 2.8Mhz" width="1200" height="668"></h3>
+<h3>Play DSF 2.8 Mhz by FN1242A DAC </h3>
+<br>
+<h10>Some one said ,Pi Zero can connect with only one of USB cable with PC(Windows,Mac,Linux etc)</h10>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi2zero.jpg" alt="PI 2 Made in Japan by Sony 2017" width="300" height="236"></center>
+<br>
+<h4>Pi Zero has only 2 micro USB and HDMI small port so I am thinking 
+need HUB for USB ,Pi Zero W is add Bluethooth and Wifi but when can we 
+get here,
+<br>Pi Zero　can play and Operate by one of USB cable hook up with Your 
+main PC like windows ,Mac and Linux please see next URL for instruction.
+<br>with out LAN connect <a href="http://blog.gbaman.info/?p=791" target="links">Here</a> and try to connect ssh and VNC etc.
+</h4>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi-zero.jpg" alt="Pi Zero " width="250" height="163"></h3>
+<h3>Pi Zero ON the Pi2</h3>
+<br>
+<h4> "Raspberry foundation" will be make  ? --------------Raspberry Pi3 
+-Zero-----------------------------------should be make Raspberry Pi3 
+-Zero
+Pi-Zero is not bad idea but must be produce one of product of Pi3 -Zero 
+with LAN base because WIFI is not convenient to use so must with LAN 
+port.  
+and not automatically connect by Wifi under Linux.but Lan is just hook 
+up wire ..then connect .kind of "Benkei no yoseatsume" is Pi-Zero.</h4>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/benkeino-yoseatsume.jpg" alt="" width="620" height="540"></h3>
+<h3>BENKEI NO YOSEATUME is Raspberry Pi-Zero</h3>
+<h4>
+kind of "person of soft ware" is always easy way to choose ..so why 
+using Wifi..Wifi is slow than Metal Cable.I think who made Pi-Zero or 
+Pi-Zero-W  ?
+does not under stand electronics. only know about software..what do you 
+think ? But Pi-Zero is very much good for "Personal Music player" by 
+Hand Made. 
+-------Raspberry Pi Zero is ArmV6 not ArmV7 -----and only can install 
+old archive like Rasbian old.what's mean ? "scam" estafa ... "Must Be 
+Use Arm 7
+and same price of USD $ 5. 
+</h4>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/LANathome.jpg" alt="at home LAN and Wifi" width="1000" height="557"></h3>
+<h3>LAN/Wifi almost Raspberry Pi and Linux x86 64bit</h3>
+<br>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rasbian-pi-zero.jpg" alt="Raspbian Pi-Zero" width="1000" height="531"></h3>
+<h3>Working for monitor of Music Server using RPi Zero</h3>
+<br>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi-zero-volumio2.jpg" alt="Volumio2 by Pi-Zero" width="918" height="691"></h3>
+<h3>USB DAC and USB HUB , LAN Adapter Power from Smartphone power supply　by Pi Zero</h3>
+<br>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-pi-zero.jpg" alt="volumio2-pi-zero" width="918" height="518"></h3>
+<h3>Pi-Zero Plays by USB DAC on 18th Apr 2017</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DAC-kitUSD4.jpg" alt="$4 dollars kit" width="350" height="260"></center>
+<h3>we can get USD $ 4 dollars DAC kit for RASP Pi Zero in Tokyo <a href="http://akizukidenshi.com/catalog/g/gK-11836/" target="links">Akihabara-kit</a></h3>
+<br>
+<br>
+<h5>Let's try to build up micro music server by Pi Zero</h5>
+<br>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/all-parts-I2S.jpg" alt="all main parts are here. for Volumio2 " width="623" height="463"></h3>
+<br>
+<br>
+<h4>is not difficult build up one of micro music server,just need one of LAN Adopter,USB HUB, I2S DAC few of header.small PCB.
+<br>Not recommend to use Wifi because Wifi not fast than LAN metal 
+cable.Pi-zero put together with small alminium case.
+just made before....with volumio2.show before.later I will inform 
+here.please cut out plastic case of pi. be cause does not fit
+when using HDMI general connector.show just like photo.practically does 
+not need monitor for Volumio2. but if has some kind of
+problem with under Linux function so need monitor for watch comand line 
+of without X Linux.if has problem does not make solution
+of problem  by ssh. just need Keyboard, mouse and monitor. I2C DAC is 
+more stable but difficult get crystal so using I2S DAC.left justfi
+<br>much better.and any kind of DAC may use but problem is crysatal.if 
+using this kind of DAC DIY can get good Music Server less than USD $50.
+by Pi Zero, how about ?
+</h4>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Rap-I2S-DAC1.png" alt="I2S DAC simple" width="800" height="600"></h3>
+<h3>Show schematic diagram ,very simple </h3>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/gpio-pi-zero.jpg" alt="gpio" width="224" height="495"></h3>
+<h3>That'a all !!!</h3>
+<br>
+<br>
+<h3><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DAC1.jpg" alt="I2S DAC DIY" width="600" height="453"></h3>
+<h3>component are big so difficult mounted on small PCB but it's all right for DIYer</h3>
+<h3>then</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/singing-volumio2.jpg" alt="wave form out put of I2S DAC" width="600" height="448"></center>
+<h3>OUT PUT is OK from I2S DAC  then </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-2017pi-zero.jpg" alt="Volumio 2 play with Pi-Zero" width="1000" height="563"></center>
+<h3>Very nice sound getting from Pi-Zero I2S from NAS (RaspberryPi NAS)</h3>
+<br><h4>plays quite good and very small Music server getting sound from 
+ Local NAS Server and Web Radio 
+this case is getting sound from NAS music server by Rasp + USB HDD. I2S 
+is very nice sound getting.and small size of Music Server
+<br>so you can play any where at home and same machine can use your office.too</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-pi-zero.jpg" alt="3 Music server " width="1000" height="470"></center>
+<h3>Raspberry pi-zero with I2S DAC by volumio2-129-2017-0323-pi.img </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-2017-1.jpg" alt="play anything by NAS" width="1000" height="560"></center>
+<h3>Play by NAS (raspberry pi B+ +HDD)</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/USBmusic-vol.jpg" alt="USB Music" width="1000" height="561"></center>
+<h3>Music from USB HDD by Volumio 1.55 RP B+</h3>
+<h4> Volumio2 3.23 2017 can do any thing and getting information from 
+other Music Server like old Volumio 1.55 Music Server.
+list of WEB Radio and recorded Music Files from other Music Server on 
+Internal home LAN. old Volumio 1.55 + Rasp B+ MusicServer
+has USB HDD and hold more than 2000 Music and  more than 2000 webradio 
+stations saved.the information saved on the hard drive is automatically 
+organized 
+and orfanizad by each category. This wonderful. to say.....this is 
+Volumio 2 3.23 2017 when if make a click "Genre", just try it's. 
+<br>Pi-Zero does not work fine with Volumio2 4-21 .but PI2  working very fine but Dop does not work.some diff files work fine. 
+<br>
+<br>Note：can not log in by ssh volumio2 it's means can not accept passwd .please try to use like next
+<br>$ ssh root@192.168.1.X -l volumio
+this problem is with same LAN line has same kind of other volumio server.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/insidepi-zero-dac.jpg" alt="inside " width="800" height="563"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/small-server.jpg" alt="as a small music server" width="800" height="645"></center>
+<h3>as a Small Music Server 90mm x 90mm alminum box </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/Pi-zero-server.png" alt="Pi-Zero Music Server" width="800" height="600"></center>
+<h3>As a Small Music Server with headphone out put</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/headphone-ampvolumio.jpg" alt="Head phone sony" width="802" height="607"></center>
+<h3>Not so bad</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-4-21pi2.jpg" alt="Volumio2 4-21 ver by RP2" width="1000" height="531"></center>
+<h3>Network connectivity is very fine.by PR2 but Pi-Zero is not good.</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/dsd-volumio2.jpg" alt="DSD play DoP by Pi2 + external USB DAC" width="999" height="561"></center>
+<h3>Pi2 + Volumio-2-12.12 + USB External DAC FN1242A</h3>
+<br>
+<br>
+<h5>SPDIF :I am using Small 24bit 96 Khz DDC but you can use WM8804 for Digital OUT to any Home Made DAC </h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/wm8804-SPDIF.jpg" alt="SPDIF out from Raspberry Pi " width="1000" height="677"></center>
+<h3>You can make SPDIF out from directly to your DAC</h3>
+<h8><a href="https://d3uzseaevmutz1.cloudfront.net/pubs/proDatasheet/WM8804_v4.5.pdf" target="links">WM8804 Data</a></h8>
+<br>
+<h4>But you can buy few product from local shop.either you can build up SPDIF interface by DIY.so you can use any kind of DIY DAC.
+if DAC has inter-face of SPDIF.
+<br><strong>SPDIF : Sony Philips Digital InterFace</strong>, Sony and Philips invent this system long time ago for High End Audio communication.
+in general Optic out and Metal cable.Metal out put is mare fast than Optic cable.you can use kind of SPDIF interface <a href="https://www.hifiberry.com/products/digiplus/" target="links">Hifiberry Digiplus</a>
+<br>
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/6N1PSRPP-DAC.png" alt="" width="900" height="1300"></center>
+<h3> DIY DAC exsample FN1242A but PCM1794 can be use instead of FN1242A</h3>
+<h10><a href="http://single-ended.com/dac-valve.htm" target="links">DAC DIY</a></h10>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/watch-by-smartphone.jpg" alt="watching volumio2 " width="600" height="504"></center>
+<strong><h3>Can do control from out side of room ...by smartphone</h3></strong>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-image.jpg" alt="volumio images" width="1000" height="571"></center>
+<h3>if does not show image of album of Music.took photo of player them drop same directly of music file</h3>
+<br>
+<h5>How to clean up PCB (Print Circuit Board)</h5>
+<br>
+<h4>I do not know the exact name of the resist solution to clean the 
+substrate, but when I was in Sony 45 years ago, 
+I purchased the following resist solution with a resist solution like 
+Matsuya (Matsuyani Pine Resin) at a pharmacy, To make a resist solution 
+and clean the substrate. 
+I think that it is good to produce liquids of various densities. 
+Purchase solder suction wires outside the shielded wire and copper wire,
+ soak in resist liquid,
+ dry it in the sun. Please refer to the image. Easy! It is! It is! If 
+you need a lot, I will do it like this.
+  Let's keep it in a plastic bag with a small chuck because the solder 
+suction line "catch a cold". 
+ If you do not use the solder suction line purchased at the store as 
+well,
+ I think that it is better to put it in a plastic bag. If you catch a 
+cold (oxidize), sucking of the solder worsens.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/resit-made.jpg" alt="process" width="300" height="188"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/wikit-made.jpg" alt="wikit" width="300" height="188"></center>
+<h3>Just Like these ,, let's try and very easily to make one good</h3>
+<br>
+<br>
+<h10>Pi Zero Headphone Amp</h10>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi-zero-headphone2.png" alt="Pi-Zero  headphone Amp" width="800" height="600"></center>
+<h3>Using BU7150 Audio Amplifier with Pi-Zero </h3>
+<br>
+<h4>Finally bought Justboom equivalent Hifiberry digi+ , 
+same circuit same component using but does not get DSF play from
+DAC. so still using DSF getting USB to SPDIF converter(Olasonic) into my DAC. both play DSF 5.6 Mhz fine.
+</h4>
+<h5>My DDC (SPDIF from USB on Raspberry Pi2,Pi3 or B+)</h5>
+<br>
+<center><center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/my-ddc-Olasonic.jpg" alt="Olasonic DDC" width="650" height="450"></center></center>
+<h3>Olasonic DDC from USB to SPDIF can do play DSF ,DAC is FN1242A Single DAC DoP</h3>
+<h4>This unit can record 96Khz 24bit from Analog signal .
+from your analog source.Tape deck,LP player ,even Tuner etc
+</h4>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DSF-play-DAC.jpg" alt="Play DSF by DAC" width="1000" height="516"></center>
+<h3>It's enough sound ,DSF 2.8Mhz to DoP PCM by home made DAC by Volumio-2</h3>
+<h4>Works good with Olasonic DDC + Home made DAC by Volumio .
+<br>Justboom Digi HAT JBM-002 works fine but does not get software volume control at volumio2.
+</h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DSF5-6rasp.jpg" alt="5.6 Mhz DSF to Dop by Home made DAC" width="1200" height="675"></center>
+<h3>Justboom Digi HAT JBM-002 plays Diana K 5.6Mhz DSF to DoP getting good sound</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi2-justdoom-spdif.jpg" alt="my system on 21st May 2017" width="1000" height="522"></center>
+<h3>Using Justboom JBM-002</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/just-boom.jpg" alt="Just boom " width="683" height="485"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/SPDIF-out.jpg" alt="SPDIF out " width="500" height="375"></center>
+<h3>Does not need expensive DDC any more.enough use  JBM-002</h3>
+<h4>But this kind of "Shield" is not reach till 384Khz by PCM. only 198 Khz by metal cable and Toslink(Optic)is only 98Khz.
+therefor much better use PCM51XX DAC directly as Raspberry pi Shield.SPDIF has limited.JBM-002 and Hifiberry digi+ are using
+<br>as I2S DAC on Raspberry pi setup.
+<br>Note :Toslink is Toshiba patented. on 1983 for PCM.  
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/DAC-for-pi-v1.png" alt="Next one DAC" width="1200" height="700"></center>
+<h3>Next one DAC DIY for Raspberry Pi </h3>
+<h3>and</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM1795-pi2.png" alt="PCM1795 Single DAC" width="1200" height="700"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/FN1242A-WM8804.png" alt="DAC NOS DAC for Raspberry Pi 2" width="950" height="750"></center>
+<h3>FN1242A is NOS DAC discontinue model in Japan this DAC is V out</h3>
+<br>
+<br>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM1795dac.jpg" alt="Shield DAC PCM1795 " width="560" height="323"></center>
+<h3>Doing build up DAC for Raspberry pi2 by PCM1795</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/PCM1795-2.jpg" alt="DAC addtional" width="706" height="525"></center>
+<h3>Other DAC 32bit 198KHz</h3>
+<br>
+<h5>How to record into SD Card by USB </h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/SD-USB-adaptor.jpg" alt="SD to USB Adaptor" width="519" height="385"></center>
+<h3>I got SD to USB Adaptor made in China ,just USD $ 1 at local shop,we call 100 YenShop</h3>
+<br>
+<h4>Next connected Volumio2 by ssh from other side of PC ,please see next picture. </h4>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-rec1.jpg" alt="step1" width="949" height="322"></center>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-rec2.jpg" alt="step2" width="968" height="317"></center>
+<br>
+<h4>you can see 2 of media.1AE7-4E5F is USB memory and 7392-5027 is SD memory
+so move to 7392-5027 directly like a $ cd 7392-5027
+<br>then ripping from WEB Radio.if your volumio2 does not have $streamripper must be install .
+<br>then you can do record into SD card.off course you can play same time by volumio2 and then you can re-play same music. 
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-rec3.jpg" alt="step3" width="1154" height="255"></center>
+<br>
+<h4>So you can record any WebRadio Station into your micro SD , SD ,USB 
+memory.then you can play actually re-play Music by smart phone
+and any equipment .even your Volumio 2 Music server.how to stop stream 
+ripper. ? $ Ctrl + c at command line of volumio ssh.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/play-from-volumio2.jpg" alt="just see directly" width="1000" height="606"></center>
+<h3>You can see SD Card as USB in Volumio2 Music server... Volumio 2 is 64bit ?? means good for RP3 suppose be...</h3>
+<br>
+<h4>WEBRADIO　Links 
+<br>
+<br>http://west1-mp3-128.streamthejazzgroove.com:80
+<br>Groove Jazz West
+<br>
+<br>http://east1-mp3-128.streamthejazzgroove.com:80/
+<br>Groove Jazz East
+<br> 
+<br>http://89.16.185.174:8000/stream   
+<br>Linn Jazz        
+<br>
+<br>http://89.16.185.174:8004/stream        
+<br>Linn Classical
+<br>
+<br>http://89.16.185.174:8003/stream
+<br>Linn Radio Music
+<br>
+<br>http://listen.ai-radio.org:8000/320.opus?cc=JP&amp;now=1461464901.198&amp;
+<br>AI Radio
+<br>http://149.210.172.114:9160/
+<br>Virginia Music
+<br>
+<br>http://8.38.78.173:8093/stream  
+<br>Classic Audiophile
+<br>
+<br>http://8.38.78.173:8210/stream 
+<br>Jazz Audiophile
+<br>
+<br>http://radiart.eu:2199/tunein/canaljazz.pls
+<br>Canal Jazz
+<br>
+<br>http://174.36.206.197:8000
+<br>Venice Classic
+<br>
+<br>http://stream.srg-ssr.ch/m/rsc_de/mp3_128
+<br>Swiss Classic
+<br>
+<br>http://streaming308.radionomy.com:80/SmoothJazzNewYorkCity
+<br>Smooth Jazz NYC
+<br>
+<br>http://198.58.106.133:8144/
+<br>CD101.9 NYC Smooth Jazz
+<br>
+<br><http: 144.76.106.52:7000="" chillout.mp3="" <br="">Chill Out Hirscmilch
+<br>
+<br>CD101.9 NYC Smooth 
+<br>is very good webradio station ,I love. new type of Fusion.
+<br>
+<br>Note: if do would like to record by streamripper ,If Virginia Music does not get Music. please try next line
+<br>$streamripper http://149.210.172.114:9160/listen.pls -u 093800 -r -R 2 149.210.172.114:9160
+<br>IP got by Nightingale Linux Version and using Short Cast.
+</http:></h4>
+<h5>Not only Ubuntu on Raspberry Pi 3 </h5>
+<br>
+<h3><a href="https://metaslab.wordpress.com/" target="links">Not only Ubuntu</a>For Solaris ,FreeBSD etc</h3>
+<br>
+<h5>Circuit CAD for Arm OS like Ubuntu</h5>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/kicad-ubu-arm.jpg" alt="Kicad for Arm OS" width="1062" height="745"></center>
+<h3>show Kicad for Arm Linux like Ubuntu </h3>
+<br>
+<h4>Arm Linux does not have many tool for write circuit(Schematic)like 
+for x86 Linux.show one of good tool for design PCB and write circuit 
+diagram
+<br>KICAD is name.if are you using Ubuntu(Debian Linux)by RP3 .can install easily .
+<br>$ sudo apt-get install kicad
+<br>if does not install kicad  , please do before install. $ sudo 
+apt-get update then try to install ,kicad is good for Arm Linux instead 
+other type of CAD. 
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio2-june-2017.jpg" alt="Volumio 2.201" width="1400" height="804"></center>
+<h3>Volumio 2.185-2017-06-03-pi.img very nice connectivity  and using pi2, does not need big capa of uSD,sound is good</h3>
+<h3>But does not make access by ssh in this version ???</h3>
+<br>
+<h4>So 6/3 ver and 6/13 ver both of Volumio 2 are ,can not make access by ssh.and NAS can not read server name. so can not use.
+<br>so back to 5/16 version of Volumio2 .I am waiting next update.DSF 5.6 Mhz is good.But .....
+<br>Note: from 1.9xxxx version ssh is desable they said for security.so what to do ? so have to use <a href="http://updates.volumio.org/pi/volumio/2.185/volumio-2.185-2017-06-03-pi.img.zip">Volumio-2.185-2017-6-03.zip</a>
+<br>when if you can not use "Latist version of Volumio2".
+<br>
+<br>then ,,connected HDMI monitor and keyboard , mouse then start up command line....
+<br>$ sudo apt-get update
+<br>$ sudo apt-get raspi-config 
+raspi-config is needed and setup SSH then "Enable" OK  then reboot.
+<br>that's all nothing to do more then I connected by ssh from other PC.
+ if you can not make access from other PC(Linux) try to delete .ssh file
+<br>$ rm -R .ssh (But can not make connect NAS and USB etc ...)some thing problem with raspi-config .
+<br>then access by ssh. 
+and can log in by ssh -l root volumio.local　
+<br>Volumio 2.201-2017-06-13-pi.img is
+<br>This version of Volumio 2.2xxx can not read(indicate just shown "-")
+ DSD file name and many file name could not read file name.even japanese
+ file name too,
+<br>Have to back to Volumio 2.185-2017-06-03-pi.img  to get fine.if would like to update ,,must be careful.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/seiko-sing-jazz.jpg" alt="Seiko Matsuda sing song Jazz" width="1200" height="640"></center>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/seiko-sing-virginiaMusic.jpg" alt="Matsuda seiko sing Jazz" width="1200" height="644"></center>
+<h3>Seiko Matsuda Sing Jazz 2017 June</h3>
+<br>
+<center><iframe src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/inMzSzQn8ho.htm" allowfullscreen="" width="854" height="480" frameborder="0"></iframe></center>
+<h3>Raspberry Pi2 + justdoom + SPDIF D.I.Y DAC with Valve 6DJ8 </h3>
+<br>
+<br>
+<center><a href="http://www.raspberryconnect.com/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/raspberry-connect.jpg" alt="raspberry connect" width="200" height="35"></a></center>
+<h3>Anything about Raspberrypi around programing ,how to use,about Ubuntu(Debian)Linux</h3>
+<br>
+<br>
+<h10><a href="http://files.soramimi.jp/skympc/1.6.3/SkyMPC-1.6.3-linux-raspberrypi.tar.gz">Sky MPC </a>for Raspberry pi</h10>
+<h4>This is one of Client of MPD you can use any platohome of PC please see <a href="http://www.soramimi.jp/skympc/" target="links">SKYMPC</a>Main Site of SKYMPC
+<br>but only in Japanese.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/SKY-MPC.jpg" alt="SKY MPC" width="1113" height="942"></center>
+<h3>This is version for Linux 64bit x86 Linux but you can install any plat home of PC But need QT for RP 1-2-3</h3>
+<br>
+<center><a href="http://www.qtrpi.com/home" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/QTforRasp.jpg" alt="get QT for Raspberry Pi" width="728" height="115"></a></center>
+<h3>Get QT5 binary for Raspberry pi 1-2-3</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/MPDroid.jpg" alt="MPDroid by Android celler" width="1065" height="769"></center>
+<h3>MPDriod by Android Celler  can control Volumio Music Server ,very much util app</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio-28-7-2017.jpg" alt="Volumio2 28 July 2017" width="1100" height="664"></center>
+<h3>Menu of Volumio2 by volumio-2.245-2017-07-28-pi.img.zip</h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/volumio28-7-2017DSD.jpg" alt="DSD play " width="1100" height="602"></center>
+<h3>DSD Play by Volumio2 volumio-2.245-2017-07-28 but can not make ssh,software volume is enable now</h3>
+<h4>Still can't  access by ssh but nothing problem because do not use.
+<br>connectivity is very good.DSD plays good by DoP and slightly heavy 
+than before.I think.and can use software volume control again.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/5-6Mhz-dsd.jpg" alt="plays 5.6 Mhz by SPDIF DAC volumio2 " width="1600" height="895"></center>
+<h3>Plays 5.6 Mhz dsd file from SPDIF to home made DAC </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/TinkerBoard.jpg" alt="Thinker Board" width="449" height="300"></center>
+<h3>Tinker Board is twice of speed of Pi3 "They Say". <a href="https://www.asus.com/uk/Single-Board-Computer/Tinker-Board/" target="links">By ASUS</a></h3>
+<h4>ASUS said much better than low spec of x86. but I think does not 
+exist low spec x86. Arm is Arm and ASUS TinkerBoard does not have many 
+future.
+<br>just like Pi3. Pi3 is possible by use 64bit , but ASUS can not use 
+64bit. if use old karnel and old x86 PC using Linux about speed is much 
+better than ASUS.  
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/small-amp-PAM8403.jpg" alt="small digital amplifier 3W" width="819" height="512"></center>
+<h3>Small Digital 3W Amplifier mult use ,PAM8403 for anythings</h3>
+<h4>PAM8403 <a href="https://www.aliexpress.com/w/wholesale-pam8403.html" target="links">You Can buy here</a>if would like to use</h4>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/raspberry-amp2.jpg" alt="Rasp 2 + Amplifier" width="900" height="580"></center>
+<h3>Raspberry pi 2 + 3W Amplifier ,quite Good. 2017 Aug</h3>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/ampraspberrypi2.jpg" alt="amp with RP2" width="842" height="455"></center>
+<h3>3W Amplifier and line out with RP2</h3>
+<br>
+<h4>volumio-2.246-2017-07-31-pi.img  update of Volumio2 on 31st July issue does not get any sound so be careful to install
+<br>does not indicates dsd file just indicated "-" .why does not indicated "unstable".soft volumum and hard does not get sound.
+<br>so back to volumio-2.185-2017-06-03-pi.img better because from 
+volumio-2.245-2017-07-28-pi.img. version does not indicated dsd files 
+just indicated "-".
+<br>said "undefined" so "undefined" does not indicate name of files.from
+ volumio-2.2XX-2017-XX-XX-pi.img. which are dsd,dsf,aiff etc.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/small-amp-wuthRasp2.jpg" alt="small amp with Rasp2 " width="1003" height="373"></center>
+<h3>91ｄB/m/w Speaker 　can get sound enough,very nice sound getting </h3>
+<br>
+<h5>out side of Raspberry pi family</h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pine64.jpg" alt="pine 64" width="612" height="469"></center>
+<h3>Pine64 <a href="https://www.pine64.org/" target="links">Arm 1.2G quad core　Cortex A53 64Bit</a></h3>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/rock64.jpg" alt="rock 64" width="527" height="310"></center>
+<h3>Rock64 is familly of Pine64 Spec is Rockchip RK3328 Quad-Core ARM Cortex A53 64-Bit Processor</h3>
+<br>
+<h4>they has Rock64 highend model .not very much different with Pine64 but good for mulutimedia and works Linux.
+<br>So Raspberry pi4 or pi5 are " I can predict that it will be the highest level Arm PC."or Should be...
+</h4>
+<h10> D.I.Y Smallest Music Server by NanoPi-Neo2</h10> 
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/NanoPi-neo2.jpg" alt="Nanopi neo2" width="290" height="228"></center>
+<br>
+<h3><a href="http://nanopi.io/nanopi-neo2.html" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/nano-logo.jpg" alt="Nanopi" width="326" height="110"></a></h3>
+<h3>Arm Cortex A53 64bit is same as RP3 Nanopi </h3>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/nano-neo.jpg" alt="Neopi2" width="694" height="468"></center>
+<br>
+<center><a href="http://single-ended.com/Nanopi-neo.htm" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/nanopi-n-dac.jpg" alt="DAC DIY" width="154" height="50"></a></center>
+<h3>very smallest server  ,you can build up and inexpensive :) if would like see click above picture</h3>
+<br>
+<br>
+<h4>I do not know which is good but using 64bit processor.both of Cortex A53 64bit.pine64 is very similar one board PC of Pi3.
+<br>Nanopi Neo2 can connected ssh and USB port.Cortex A53 64bit is using,Raspberry pi3,Think board and Pine64.what's will be
+<br>Raspberry pi3 and pi2 are very much flexisible for experimenter's and DIY'er.because has many port.many information.
+<br>Raspberry Pi Foundation if would like to ,will be make new product as Raspberry Pi 4  ,,must be support 1000 M LAN and Wifi,BL
+<br><font color="#ff0000"> Pine64 is just like piece of Junk" </font> please do not buy.cost down product means something bad and bad support.
+<br>and Memory is more than 2 G Byte.add kind of Rock Processor. we like Raspberry Pi so ,,what to do ? We like raspberry pi.
+<br>By Raspberry pi Foundation　I would like you to manufacture Raspberry Pi 4 even better. 
+<br>I think that it is funny that one user has Raspberry Pi as well. But Pi3 is Best performance ...Pine64 is bad quality.
+<br>if one's would like to buy one of them please wait until Raspberry pi 4 much better.
+<br>But new type of One Board PC has SPDIF out put and Master Clock so probably good for Music Server using minimal system.
+</h4>
+<br><h10><a href="https://etcher.io/" target="links">Burner for Multi Plat Home(PC any OS)</a></h10>
+<h3>Burner for img file by any plat home OS</h3>
+<br>
+<h4>Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36  Pine64 is working as
+<br>x86 Machine.show above from log,so Android is some kind of x11 
+x86_64bit .but actually very very slowly.impossible to watch Netflix and
+<br>any kind of movie by Pine64 2 G...finally I have to use some kind of Music server.off course can use from SPDIF and I2C DAC.
+<br>
+<br>on 7th Sep 2017 : back from work ,Pi B+ was down ,very hot around 3.3V Regurator,so suppose be Pi B+ was broken,if CPU is good 
+<br>I will try to replace 3.3V regurator.on Pi B+.be careful hot in the 
+summer does not have heat sink or fan around Pi.I have 3 of them
+<br>one of 3 Music server was down.have to use Pine64 for Volumio2 A.S.A.P.
+<br>finally Raspberry pi B+ was broken so  Next photo is Pine64 +2G and Volumio2.using DDC and DAC.
+<br>recently PC are going move system of 32bit to 64bit PC.why ? cause 
+of problem of MR Dennis MacAlistair Ritchie and Mr Kenneth Lane Thompson
+<br>who invented UNIX. and must know problem of 2038 . we say " problem 
+of 2038 " how to Avoidance　from 2038 problem.even windows, iphone any
+<br>PC are working under UNIX right now.who are great MR Dennis 
+MacAlistair Ritchie and Mr Kenneth Lane Thompson in the world ,,,you 
+must know.
+<br>
+<br>Very important note: Do not buy Pine64 and Pine64 family.because not
+ compatible with raspberry pi.even they has port of PI2 40pins 
+<br>but not enable.and  does not get any information .I said Do Not Buy 
+ and Pine64 and Pine Family are "Garbage."because they does not give any
+ information hardware by software.
+</h4>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pine64-volumio1.jpg" alt="pine64 + Volumio2" width="1200" height="679"></center>
+<h3>Volumio2 + Pine64 +A64 2G now play by USB DAC on 10th Sep 2017 But can not use I2S <a href="https://support.hifiberry.com/hc/en-us/community/posts/205751519-Pine-A64-" target="links">"Ref"</a></h3>
+<h3>ssh root@192.168.1.27 -l volumio   ip is depended on your set up</h3>
+<br>
+<h5>Plan of Sabre ES 9023 I2S DAC for DIYer</h5>
+<br>
+<br>
+<center><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/ES9023-I2S-50Mhz.png" alt="just plan for DAC ES9023" width="1000" height="600"></center>
+<h3>Show you just schematic diagram for ES9023 Sabre I2S DAC</h3>
+<br>
+<br>
+<br>
+<br>
+<center><a href="http://www.g0hwc.com/raspberry-pi-ham-radio.html" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/pi-for-ham.jpg" alt="pi for ham" width="341" height="101"></a></center>
+<br>
+<h3><a href="https://www.freebsd.org/" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/freebsd-link.jpg" alt="FreeBSD" width="268" height="73"></a></h3><h3>
+<br>
+<br>
+<center><a href="http://mpd.sytes.net/ja" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/symponic-mpd.jpg" alt="dymponi-mpd" width="285" height="49"></a></center>
+</h3><h3>Specially for RP3 Japanese MPD but only in Japanse ,sound is High End Audio</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h5>Let's listen to music more than things shapes and techniques</h5>
+<br>
+<br>
+<br>
+<br>
+<h5>Very Important :finally " Raspberry Pi 2-3" are very stable One 
+Board PC for C/P and Good for "Experimenter" around OS, programing and 
+hard skill etc .</h5>
+<br>
+<br>
+<h10><a href="http://single-ended.com/icewm-raspberrypi.htm" target="links">How to install ICEWM into Raspberry pi Linux</a></h10>
+<br>
+<br>
+<h10><a href="http://single-ended.com/Lagarto/ice/icewm-j5.htm" target="links">How to use ICEWM by Linux x86 x11 only Japanese </a></h10>
+<br>
+<br>
+<br>
+<center><a href="https://www.youtube.com/channel/UCxuGMbhhMPojx581WbsjM-w" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/you-tube.jpg" alt="You Tube for Tube Amplifier" width="92" height="40"></a></center>
+<br>
+<br>
+<center><a href="https://www.facebook.com/kenyitosan" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/fb.jpg" alt="Facebook" width="46" height="51"></a></center><a href="https://www.facebook.com/kenyitosan" target="links">
+<br>
+<br></a><center><a href="https://www.facebook.com/kenyitosan" target="links"></a><p><a href="https://www.facebook.com/kenyitosan" target="links"></a><a href="http://single-ended.com/7th_avenue.htm" target="links"><img src="High%20Re-Solution%20Audio%20with%20Raspberry%20Pi2%20B+%20I2S%20DAC%20DIY_files/se.gif" title="" alt="7th Avenue" style="border: 0px solid ; width: 269px; height: 47px;" onmouseover="this.src='images/se2.gif'" onmouseout="this.src='images4/se.gif'" border="0"></a></p>
+ </center><br>
+<p id="baka">since 15th JAN 2015  Raspberry Pi B+ Music Server how to  last up date 10th Nov  2017</p>
+<p id="baka">How to build up Amplifier Single Ended Amplifier 2017 Sakura Chiba Japan</p>
+
+
+</center></h10></h10></h></h4></b></h10></body><style id="stylish-2" class="stylish" type="text/css">@namespace html url(http://www.w3.org/1999/xhtml);
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace xul url(http://www.wikiwand.com);
+/*----- SITES TO EXCLUDE -----*/
+/*----- RIGHT-CLICK MENUS & TOOLTIP STYLE -----*/
+#contentAreaContextMenu menuitem[disabled="true"], 
+#contentAreaContextMenu menuitem[disabled="true"] menuseparator {
+    display: none !important}
+
+menupopup, popup,
+popup > menu > menupopup,
+menupopup > menu > menupopup {
+    -moz-appearance: none !important;
+    background: rgba(15,15,15,.9) !important;
+    border: 1px solid #000 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 0 1px #777, inset 0 0 10px #000 !important;
+    padding: 2px 0 !important}
+menupopup * {box-shadow: none !important; color: #777 !important}
+menupopup menuitem:hover * {
+    color: #F0F0F0 !important;
+    text-shadow: 0 0 5px rgba(255,255,200,0.9) !important}
+menupopup menuseparator {
+    -moz-appearance: none !important;
+    background: transparent !important;
+    margin: 2px 0 2px -3px !important;
+    padding: 0 !important;
+    border-top: none !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 3px #666 !important}
+menupopup menuitem {
+    -moz-appearance: none !important;
+    background: transparent !important;
+    text-shadow: 0 1px #000 !important}
+menupopup menuitem:hover, menuitem[_moz-menuactive="true"] {
+    background: #333 !important;
+}
+tooltip {
+    -moz-appearance: none !important;
+    color: #CCC !important;
+    background: rgba(0,0,0,.8) !important;
+    border: 1px solid #555 !important;
+    border-radius: 3px !important}
+
+/*----- FIX WHITE NEW TAB FLASH -----*/
+browser[type="content-primary"] {background: #151515 !important}</style></html>

@@ -1,0 +1,11 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="603" startPos="270" endPos="270" selMode="0" lang="Python" encoding="-1" filename="C:\Users\Melvin\AppData\Roaming\Notepad++\plugins\Config\NppFTP\Cache\pi@192.168.178.45\home\pi\clock_set.py" backupFilePath="" originalFileLastModifTimestamp="1528491853" mapFirstVisibleDisplayLine="0" mapFirstVisibleDocLine="0" mapLastVisibleDocLine="49" mapNbLine="49" mapHigherPos="0" mapWidth="174" mapHeight="196" mapKByteInDoc="1" mapWrapIndentMode="1" mapIsWrap="yes" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1125" startPos="550" endPos="550" selMode="0" lang="Python" encoding="-1" filename="C:\Users\Melvin\AppData\Roaming\Notepad++\plugins\Config\NppFTP\Cache\pi@192.168.178.45\home\pi\i2c_disp.py" backupFilePath="" originalFileLastModifTimestamp="1528479917" mapFirstVisibleDisplayLine="0" mapFirstVisibleDocLine="0" mapLastVisibleDocLine="49" mapNbLine="49" mapHigherPos="0" mapWidth="174" mapHeight="196" mapKByteInDoc="0" mapWrapIndentMode="1" mapIsWrap="yes" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1125" startPos="0" endPos="0" selMode="0" lang="Python" encoding="-1" filename="C:\Users\Melvin\AppData\Roaming\Notepad++\plugins\Config\NppFTP\Cache\pi@192.168.178.45\home\pi\power_down.py" backupFilePath="" originalFileLastModifTimestamp="1528479918" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-1605168360" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1125" startPos="0" endPos="0" selMode="0" lang="Python" encoding="-1" filename="C:\Users\Melvin\AppData\Roaming\Notepad++\plugins\Config\NppFTP\Cache\pi@192.168.178.45\home\pi\power_up.py" backupFilePath="" originalFileLastModifTimestamp="1528479919" mapFirstVisibleDisplayLine="0" mapFirstVisibleDocLine="0" mapLastVisibleDocLine="49" mapNbLine="49" mapHigherPos="0" mapWidth="174" mapHeight="196" mapKByteInDoc="0" mapWrapIndentMode="1" mapIsWrap="yes" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
